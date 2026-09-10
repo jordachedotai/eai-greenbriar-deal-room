@@ -8,6 +8,7 @@ import { openProposals } from "@/lib/transitions";
 const dealTabs = [
   { href: "/deal", label: "Board" },
   { href: "/deal/inbox", label: "Inbox" },
+  { href: "/deal/note", label: "Tonight's note" },
   { href: "/deal/readiness", label: "Readiness" },
   { href: "/deal/activity", label: "Activity" },
 ];
@@ -58,7 +59,7 @@ export function LoopRail() {
                           className={`flex items-center justify-between rounded-md px-2 py-1 text-[14px] ${
                             on ? "font-semibold text-ink" : "text-muted hover:text-ink"
                           }`}
-                          data-testid={`rail-tab-${t.label.toLowerCase()}`}
+                          data-testid={`rail-tab-${t.href.split("/").pop()}`}
                         >
                           {t.label}
                           {t.label === "Inbox" && waiting > 0 && <span className="chip chip-needsYou">{waiting}</span>}
@@ -73,7 +74,7 @@ export function LoopRail() {
         })}
       </ol>
       <div className="mt-auto px-5 py-4 text-[12px] leading-snug text-muted">
-        Stage 2 of 5 is live in this build. Mock data only. Nothing leaves this machine.
+        Stage 2 of 5 is live in this build. Mock data only. Nothing leaves this machine. Shift+P for the presenter menu.
       </div>
     </nav>
   );

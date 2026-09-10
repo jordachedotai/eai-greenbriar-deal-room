@@ -24,7 +24,7 @@ export function PrimaryAction() {
     );
   }
   return (
-    <Link href="/deal/inbox" className="btn btn-primary" data-testid="primary-action">
+    <Link href="/deal/note" className="btn btn-primary" data-testid="primary-action">
       Draft tonight&apos;s note
     </Link>
   );

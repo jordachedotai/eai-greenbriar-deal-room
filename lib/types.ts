@@ -88,6 +88,15 @@ export type SellerQuestion = {
 
 export type BidChecklistItem = { id: string; name: string; placeholder: boolean; done: boolean };
 
+export type StatusNote = {
+  id: string;
+  date: string; // the state's `today` it was written for
+  text: string;
+  by: string;
+  sentAt: string;
+  mock: boolean; // drafted from the template, not the model
+};
+
 export type ActivityEntry = {
   id: string;
   at: string;
@@ -115,6 +124,7 @@ export type DealState = {
   sellerQuestions: SellerQuestion[];
   bidChecklist: BidChecklistItem[];
   memoSections: MemoSection[];
+  statusNotes: StatusNote[];
 };
 
 // Names files (hand-edited, swappable without code changes)

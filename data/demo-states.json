@@ -161,7 +161,8 @@
           ],
           "coverage": "none"
         }
-      ]
+      ],
+      "statusNotes": []
     },
     "midstream": {
       "name": "midstream",
@@ -1111,7 +1112,8 @@
           ],
           "coverage": "partial"
         }
-      ]
+      ],
+      "statusNotes": []
     },
     "ic-minus-3": {
       "name": "ic-minus-3",
@@ -1876,7 +1878,7 @@
           "action": "Proposed \"Litigation and regulatory review\" done (thin evidence)"
         },
         {
-          "id": "act-0001",
+          "id": "act-0034",
           "at": "2026-09-11T18:02:00Z",
           "by": "p-vp",
           "itemId": "qoe-3",
@@ -1884,7 +1886,7 @@
           "action": "Approved \"Databook v1 received\" in progress to done"
         },
         {
-          "id": "act-0002",
+          "id": "act-0035",
           "at": "2026-09-11T18:03:00Z",
           "by": "p-vp",
           "itemId": "legal-3",
@@ -1892,7 +1894,7 @@
           "action": "Approved \"Material contracts summary\" in progress to done"
         },
         {
-          "id": "act-0003",
+          "id": "act-0036",
           "at": "2026-09-11T18:04:00Z",
           "by": "p-vp",
           "itemId": "legal-4",
@@ -1900,7 +1902,7 @@
           "action": "Asked for confirmation on \"Litigation and regulatory review\": one line, no attachment, asked Sam which steps are done"
         },
         {
-          "id": "act-0004",
+          "id": "act-0037",
           "at": "2026-09-12T09:05:00Z",
           "by": "agent",
           "evidenceId": "ev-11",
@@ -1908,7 +1910,7 @@
           "action": "Proposed \"Commitment letters\" done (conflict evidence)"
         },
         {
-          "id": "act-0005",
+          "id": "act-0038",
           "at": "2026-09-12T18:10:00Z",
           "by": "p-vp",
           "itemId": "financing-5",
@@ -1916,69 +1918,69 @@
           "action": "Rejected \"Commitment letters\" to done: Tom confirmed by phone: letter is drafted, not sent. Still at term sheet stage."
         },
         {
-          "id": "act-0006",
+          "id": "act-0039",
           "at": "2026-09-13T17:50:00Z",
           "by": "p-director",
           "itemId": "legal-4",
           "action": "Marked \"Litigation and regulatory review\" done by hand: litigation memo received"
         },
         {
-          "id": "act-0007",
+          "id": "act-0040",
           "at": "2026-09-14T19:00:00Z",
           "by": "p-vp",
           "itemId": "financing-4",
           "action": "Marked \"Lender diligence sessions\" done by hand: both lender sessions held"
         },
         {
-          "id": "act-0008",
+          "id": "act-0041",
           "at": "2026-09-15T18:00:00Z",
           "by": "p-director",
           "itemId": "legal-5",
           "action": "Marked \"Purchase agreement first turn\" in progress by hand: banker's draft arrived"
         },
         {
-          "id": "act-0009",
+          "id": "act-0042",
           "at": "2026-09-16T19:30:00Z",
           "by": "p-associate",
           "itemId": "qoe-4",
           "action": "Marked \"Management interviews\" done by hand"
         },
         {
-          "id": "act-0010",
+          "id": "act-0043",
           "at": "2026-09-17T17:45:00Z",
           "by": "p-associate",
           "itemId": "qoe-5",
           "action": "Marked \"Draft report\" in progress by hand"
         },
         {
-          "id": "act-0011",
+          "id": "act-0044",
           "at": "2026-09-16T21:00:00Z",
           "by": "p-associate",
           "itemId": "memo-company",
           "action": "Marked \"Company Overview\" done by hand"
         },
         {
-          "id": "act-0012",
+          "id": "act-0045",
           "at": "2026-09-16T21:10:00Z",
           "by": "p-vp",
           "itemId": "memo-merits",
           "action": "Marked \"Merits\" in progress by hand"
         },
         {
-          "id": "act-0013",
+          "id": "act-0046",
           "at": "2026-09-17T17:00:00Z",
           "by": "p-vp",
           "itemId": "memo-considerations",
           "action": "Marked \"Considerations and Diligence Focus Areas\" in progress by hand"
         },
         {
-          "id": "act-0014",
+          "id": "act-0047",
           "at": "2026-09-15T18:30:00Z",
           "by": "p-director",
           "action": "Checked bid item: Purchase agreement mark-up"
         },
         {
-          "id": "act-0015",
+          "id": "act-0048",
           "at": "2026-09-17T16:00:00Z",
           "by": "p-partner",
           "action": "Checked bid item: Equity commitment"
@@ -2205,7 +2207,8 @@
           ],
           "coverage": "partial"
         }
-      ]
+      ],
+      "statusNotes": []
     }
   }
 }

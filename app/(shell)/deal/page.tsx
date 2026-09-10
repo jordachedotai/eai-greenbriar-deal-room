@@ -1,4 +1,5 @@
 "use client";
+import { ActionBar } from "@/components/Shell/ActionBar";
 import { Board } from "@/components/Deal/Board";
 import { KickoffCard } from "@/components/Deal/KickoffCard";
 import { LanesView } from "@/components/Deal/LanesView";
@@ -16,15 +17,13 @@ export default function DealPage() {
         <WorkStrip />
         <ViewToggle />
       </div>
-      <div className="min-h-0 flex-1 overflow-auto px-6 pb-24 pt-5">
+      <div className="min-h-0 flex-1 overflow-auto px-6 pb-6 pt-5">
         {empty && <KickoffCard />}
         {view === "board" ? <Board /> : <LanesView />}
       </div>
-      <div className="pointer-events-none fixed bottom-6 right-8 z-10">
-        <div className="pointer-events-auto">
-          <PrimaryAction />
-        </div>
-      </div>
+      <ActionBar>
+        <PrimaryAction />
+      </ActionBar>
     </div>
   );
 }

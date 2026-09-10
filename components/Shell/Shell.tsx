@@ -3,8 +3,10 @@ import { useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { useStore } from "@/lib/store";
 import type { Evidence, EvidenceMatch } from "@/lib/types";
+import { PresenterMenu } from "@/components/Presenter/PresenterMenu";
 import { Header } from "./Header";
 import { LoopRail } from "./LoopRail";
+import { Toasts } from "./Toasts";
 
 export function Shell({ evidence, matches, children }: { evidence: Evidence[]; matches: EvidenceMatch[]; children: React.ReactNode }) {
   const router = useRouter();
@@ -32,6 +34,8 @@ export function Shell({ evidence, matches, children }: { evidence: Evidence[]; m
         <Header />
         <main className="min-h-0 flex-1 overflow-auto">{children}</main>
       </div>
+      <PresenterMenu />
+      <Toasts />
     </div>
   );
 }

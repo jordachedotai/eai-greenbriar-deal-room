@@ -18,17 +18,20 @@ import type {
   Workstream,
 } from "./types";
 
-let seq = 0;
-export function resetIds(): void {
-  seq = 0;
-}
-function nextId(prefix: string): string {
-  seq += 1;
-  return `${prefix}-${seq.toString().padStart(4, "0")}`;
+// Ids come from the state itself, so the browser continues where the saved state stopped.
+export function nextId(prefix: string, existing: { id: string }[]): string {
+  const max = existing.reduce((m, x) => {
+    const n = x.id.startsWith(`${prefix}-`) ? Number(x.id.slice(prefix.length + 1)) : NaN;
+    return Number.isFinite(n) && n > m ? n : m;
+  }, 0);
+  return `${prefix}-${(max + 1).toString().padStart(4, "0")}`;
 }
 
+// Kept for the generator scripts. Nothing to reset now that ids live in the state.
+export function resetIds(): void {}
+
 function log(state: DealState, entry: Omit<ActivityEntry, "id">): DealState {
-  return { ...state, activity: [...state.activity, { id: nextId("act"), ...entry }] };
+  return { ...state, activity: [...state.activity, { id: nextId("act", state.activity), ...entry }] };
 }
 
 export type SprintInputs = {
@@ -187,6 +190,12 @@ export function tickChecklist(state: DealState, checklistId: string, done: boole
   if (!c) return state;
   const next = { ...state, bidChecklist: state.bidChecklist.map((x) => (x.id === checklistId ? { ...x, done } : x)) };
   return log(next, { at, by, action: `${done ? "Checked" : "Unchecked"} bid item: ${c.name}` });
+}
+
+export function sendStatusNote(state: DealState, text: string, by: string, at: string, mock: boolean): DealState {
+  const note = { id: nextId("note", state.statusNotes), date: state.today, text, by, sentAt: at, mock };
+  const next = { ...state, statusNotes: [...state.statusNotes, note] };
+  return log(next, { at, by, action: "Sent tonight's status note to the working group" });
 }
 
 export function words(s: ItemStatus): string {

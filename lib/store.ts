@@ -5,10 +5,12 @@ import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 import demoStates from "@/data/demo-states.json";
 import { lanes, memoLaneDef, memoSectionDefs, personByRole, workstreamDefs } from "./data";
+import { WORKING_DELAY_MS } from "./mockAgent";
 import * as T from "./transitions";
+import type { AgentMode } from "./agent";
 import type { DealState, DecisionAction, Evidence, EvidenceMatch, ItemStatus, StateName } from "./types";
 
-export const STORE_VERSION = 1;
+export const STORE_VERSION = 2; // 2: statusNotes on DealState, agentMode persisted
 export const STORE_KEY = "greenbriar-deal-room";
 
 export type View = "board" | "lanes";
@@ -34,12 +36,18 @@ type Persisted = {
   view: View;
   stateName: StateName;
   state: DealState;
+  agentMode: AgentMode;
 };
+
+export type Toast = { id: number; text: string };
 
 type Volatile = {
   hasHydrated: boolean;
   evidence: Evidence[];
   matches: EvidenceMatch[];
+  readingEvidenceId: string | null; // the agent is "reading" a fresh arrival
+  toasts: Toast[];
+  presenterOpen: boolean;
 };
 
 type Actions = {
@@ -54,6 +62,11 @@ type Actions = {
   decide: (proposalId: string, action: DecisionAction, reason?: string) => void;
   setStatusByHand: (itemId: string, status: ItemStatus, note?: string) => void;
   simulateNextEvidence: () => Evidence | undefined;
+  sendStatusNote: (text: string, mock: boolean) => void;
+  setAgentMode: (m: AgentMode) => void;
+  toast: (text: string) => void;
+  dismissToast: (id: number) => void;
+  setPresenterOpen: (v: boolean) => void;
 };
 
 export type Store = Persisted & Volatile & Actions;
@@ -63,6 +76,7 @@ const initialPersisted: Persisted = {
   view: "board",
   stateName: "midstream",
   state: savedState("midstream"),
+  agentMode: "mock",
 };
 
 export const useStore = create<Store>()(
@@ -72,6 +86,9 @@ export const useStore = create<Store>()(
       hasHydrated: false,
       evidence: [],
       matches: [],
+      readingEvidenceId: null,
+      toasts: [],
+      presenterOpen: false,
 
       signIn: (personId) => set({ currentUserId: personId }),
       signOut: () => set({ currentUserId: null }),
@@ -114,15 +131,35 @@ export const useStore = create<Store>()(
         const next = evidence.find((e) => !seen.has(e.id));
         if (!next) return undefined;
         const arrival = { ...next, receivedAt: stampNow(state) };
-        set({ state: T.receiveEvidence(state, arrival, matches.find((m) => m.evidenceId === next.id), lanes, arrival.receivedAt) });
+        set({
+          state: T.receiveEvidence(state, arrival, matches.find((m) => m.evidenceId === next.id), lanes, arrival.receivedAt),
+          evidence: evidence.map((e) => (e.id === next.id ? arrival : e)),
+          readingEvidenceId: next.id,
+        });
+        setTimeout(() => set({ readingEvidenceId: null }), WORKING_DELAY_MS);
         return arrival;
       },
+
+      sendStatusNote: (text, mock) => {
+        const { state, currentUserId } = get();
+        if (!currentUserId) return;
+        set({ state: T.sendStatusNote(state, text, currentUserId, stampNow(state), mock) });
+      },
+
+      setAgentMode: (agentMode) => set({ agentMode }),
+      toast: (text) => {
+        const id = Date.now() + Math.random();
+        set((s) => ({ toasts: [...s.toasts, { id, text }] }));
+        setTimeout(() => set((s) => ({ toasts: s.toasts.filter((t) => t.id !== id) })), 2500);
+      },
+      dismissToast: (id) => set((s) => ({ toasts: s.toasts.filter((t) => t.id !== id) })),
+      setPresenterOpen: (presenterOpen) => set({ presenterOpen }),
     }),
     {
       name: STORE_KEY,
       version: STORE_VERSION,
       storage: createJSONStorage(() => localStorage),
-      partialize: (s): Persisted => ({ currentUserId: s.currentUserId, view: s.view, stateName: s.stateName, state: s.state }),
+      partialize: (s): Persisted => ({ currentUserId: s.currentUserId, view: s.view, stateName: s.stateName, state: s.state, agentMode: s.agentMode }),
       migrate: (persisted, fromVersion) => {
         // A stale browser in the room explains itself, once, then starts clean.
         console.warn(

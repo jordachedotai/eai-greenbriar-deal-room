@@ -59,6 +59,7 @@ function blank(name: StateName, todayDay: number): DealState {
     sellerQuestions: [],
     bidChecklist: checklist.map((c) => ({ ...c, done: false })),
     memoSections: buildMemoSections(memoSectionDefs, []),
+    statusNotes: [],
   };
 }
 

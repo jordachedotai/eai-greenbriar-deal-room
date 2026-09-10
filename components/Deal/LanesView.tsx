@@ -28,7 +28,7 @@ export function LanesView() {
             </tr>
           </thead>
           <tbody>
-            {lanes.map((lane) => {
+            {lanes.filter((l) => l.kind === "workstream").map((lane) => {
               const items = itemsByLane(state, lane.id);
               const party = partyById(lane.externalPartyId);
               return [
