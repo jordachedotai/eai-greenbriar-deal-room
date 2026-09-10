@@ -20,6 +20,16 @@ export function laneProgress(laneId: string, items: Item[]): number {
   return laneItems.filter((i) => i.status === "done").length / laneItems.length;
 }
 
+export type LaneState = "done" | "inProgress" | "notStarted";
+
+// The lane as a whole: done when every step is done, not started when none has moved.
+export function laneState(laneId: string, items: Item[]): LaneState {
+  const laneItems = items.filter((i) => i.laneId === laneId);
+  if (laneItems.length === 0 || laneItems.every((i) => i.status === "notStarted")) return "notStarted";
+  if (laneItems.every((i) => i.status === "done")) return "done";
+  return "inProgress";
+}
+
 export function coverageFor(supportedBy: string[], items: Item[]): Coverage {
   if (supportedBy.length === 0) return "none";
   const avg = supportedBy.reduce((sum, id) => sum + laneProgress(id, items), 0) / supportedBy.length;

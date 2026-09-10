@@ -2,6 +2,20 @@
 
 Decisions from screenshot reviews. Newest round at the top. Each round is batched into the next phase's instructions.
 
+## Round 3, Phase 3 screenshots, 2026-09-09
+
+Reviewed: readiness in `midstream` after the beat 2 approvals, and in `ic-minus-3`.
+
+**Keep as is.** The three-number strip. Unsupported rows naming who owes them. Seller questions sorted overdue first with days late. The bid checklist with its placeholder line. The footer sentence. The primary button switching to "Back to the board" once the note is sent. The ic-minus-3 data change (three chased questions answered, three newer overdue).
+
+**Change.**
+1. **Grid cells show a mark, not a number.** Every row repeats the lane's percent (43% under QoE on six rows), which reads as noise and invites "why is QoE 43% everywhere." Keep the percent in the column header only. In the cells show one mark per supporting lane: filled for done, half for in progress, empty ring for not started, blank where the lane does not support the section. Same colors as the status chips.
+2. **Checklist wording.** "Offer letter" ticked at day 21 reads as sent. Rename to "Offer letter draft" so the tick means drafted.
+
+**Presenter note, no build change.** The five "Placeholder" chips are honest and stay. The line to say in the room: "These five are the sections we have not confirmed with the sponsor yet. The first five are Greenbriar's own Criteria Worksheet sections."
+
+**Status.** Friday-ready after round 3. Phase 4 waits on AJ's step lists and note sample, and on Matt's reports from Peter.
+
 ## Round 2, Phase 2 screenshots, 2026-09-09
 
 Reviewed: inbox with three proposals, board after two approvals and one confirmation request, Activity with the Decisions filter, tonight's note draft.

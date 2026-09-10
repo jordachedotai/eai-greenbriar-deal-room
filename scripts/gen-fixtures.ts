@@ -211,7 +211,7 @@ write("questions.json", questions);
 
 // Bid checklist. Placeholder list until the sponsor confirms.
 const checklist: BidChecklistItem[] = [
-  { id: "bid-1", name: "Offer letter", placeholder: true, done: false },
+  { id: "bid-1", name: "Offer letter draft", placeholder: true, done: false },
   { id: "bid-2", name: "Purchase agreement mark-up", placeholder: true, done: false },
   { id: "bid-3", name: "Financing commitments", placeholder: true, done: false },
   { id: "bid-4", name: "Equity commitment", placeholder: true, done: false },

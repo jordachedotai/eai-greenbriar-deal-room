@@ -24,7 +24,7 @@
       "bidChecklist": [
         {
           "id": "bid-1",
-          "name": "Offer letter",
+          "name": "Offer letter draft",
           "placeholder": true,
           "done": false
         },
@@ -865,7 +865,7 @@
           "id": "act-0030",
           "at": "2026-09-10T21:00:00Z",
           "by": "p-vp",
-          "action": "Checked bid item: Offer letter"
+          "action": "Checked bid item: Offer letter draft"
         },
         {
           "id": "act-0031",
@@ -975,7 +975,7 @@
       "bidChecklist": [
         {
           "id": "bid-1",
-          "name": "Offer letter",
+          "name": "Offer letter draft",
           "placeholder": true,
           "done": true
         },
@@ -1851,7 +1851,7 @@
           "id": "act-0030",
           "at": "2026-09-10T21:00:00Z",
           "by": "p-vp",
-          "action": "Checked bid item: Offer letter"
+          "action": "Checked bid item: Offer letter draft"
         },
         {
           "id": "act-0031",
@@ -2088,7 +2088,7 @@
       "bidChecklist": [
         {
           "id": "bid-1",
-          "name": "Offer letter",
+          "name": "Offer letter draft",
           "placeholder": true,
           "done": true
         },

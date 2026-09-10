@@ -68,6 +68,12 @@ test("four beats: before, evidence lands, the note, readiness", async ({ page })
   await expect(page.locator('[data-testid^="question-sq-"]')).toHaveCount(8);
   await expect(page.locator('[data-testid^="question-sq-"][data-overdue="true"]')).toHaveCount(3);
   await expect(page.getByTestId("bid-count")).toHaveText("1 of 6 done");
+  await expect(page.getByTestId("bid-checklist")).toContainText("Offer letter draft");
+  // One mark per supporting lane, blank elsewhere. Industry Overview is supported by IT only.
+  await expect(page.getByTestId("coverage-memo-industry").locator('[data-mark="inProgress"]')).toHaveCount(1);
+  await expect(page.getByTestId("coverage-memo-industry").locator('[data-mark="blank"]')).toHaveCount(4);
+  // The percent lives in the column header only. Cells carry a mark, no visible text.
+  await expect(page.getByTestId("coverage-memo-company").locator("td").nth(1)).toHaveText("", { useInnerText: true });
   await expect(page.getByTestId("primary-action")).toHaveText("Back to the board");
   await page.waitForTimeout(400);
   await page.screenshot({ path: `${dir}/08-readiness-midstream.png` });
@@ -99,6 +105,8 @@ test("four beats: before, evidence lands, the note, readiness", async ({ page })
   await page.getByTestId("presenter-state-kickoff").click();
   await page.getByTestId("rail-tab-readiness").click();
   await expect(page.locator('[data-coverage="none"]')).toHaveCount(10);
+  await expect(page.locator('[data-mark="notStarted"]').first()).toBeVisible();
+  await expect(page.locator('[data-mark="inProgress"]')).toHaveCount(0);
 
   // Leave the browser in midstream.
   await page.keyboard.press("Shift+P");
