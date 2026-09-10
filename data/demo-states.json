@@ -1975,12 +1975,30 @@
         },
         {
           "id": "act-0047",
+          "at": "2026-09-13T16:20:00Z",
+          "by": "p-associate",
+          "action": "Seller answered: Add-back support for owner compensation and one-time legal fees"
+        },
+        {
+          "id": "act-0048",
+          "at": "2026-09-13T16:21:00Z",
+          "by": "p-associate",
+          "action": "Seller answered: Working capital detail by month"
+        },
+        {
+          "id": "act-0049",
+          "at": "2026-09-14T11:05:00Z",
+          "by": "p-director",
+          "action": "Seller answered: Open litigation and any regulatory notices since 2023"
+        },
+        {
+          "id": "act-0050",
           "at": "2026-09-15T18:30:00Z",
           "by": "p-director",
           "action": "Checked bid item: Purchase agreement mark-up"
         },
         {
-          "id": "act-0048",
+          "id": "act-0051",
           "at": "2026-09-17T16:00:00Z",
           "by": "p-partner",
           "action": "Checked bid item: Equity commitment"
@@ -2016,7 +2034,7 @@
           "text": "Add-back support for owner compensation and one-time legal fees",
           "askedAt": "2026-08-29",
           "dueAt": "2026-09-05",
-          "answered": false
+          "answered": true
         },
         {
           "id": "sq-3",
@@ -2024,7 +2042,7 @@
           "text": "Working capital detail by month",
           "askedAt": "2026-08-31",
           "dueAt": "2026-09-07",
-          "answered": false
+          "answered": true
         },
         {
           "id": "sq-4",
@@ -2040,7 +2058,7 @@
           "text": "Open litigation and any regulatory notices since 2023",
           "askedAt": "2026-09-02",
           "dueAt": "2026-09-09",
-          "answered": false
+          "answered": true
         },
         {
           "id": "sq-6",

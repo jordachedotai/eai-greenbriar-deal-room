@@ -7,7 +7,7 @@ import { addDays } from "../lib/clock";
 import { lanes, memoLaneDef, memoSectionDefs, personByRole, workstreamDefs } from "../lib/data";
 import { buildMemoSections } from "../lib/readiness";
 import { loadEvidence, loadMatches } from "../lib/sources";
-import { decide, receiveEvidence, resetIds, setStatusByHand, setupSprint, tickChecklist } from "../lib/transitions";
+import { answerQuestion, decide, receiveEvidence, resetIds, setStatusByHand, setupSprint, tickChecklist } from "../lib/transitions";
 import type { BidChecklistItem, DealState, SellerQuestion, StateName } from "../lib/types";
 
 const root = path.resolve(__dirname, "..");
@@ -129,6 +129,9 @@ c = setStatusByHand(c, "qoe-5", "inProgress", associate, at(27, "17:45"));
 c = setStatusByHand(c, "memo-company", "done", associate, at(26, "21:00"));
 c = setStatusByHand(c, "memo-merits", "inProgress", vp, at(26, "21:10"));
 c = setStatusByHand(c, "memo-considerations", "inProgress", vp, at(27, "17:00"));
+c = answerQuestion(c, "sq-2", associate, at(23, "16:20"));
+c = answerQuestion(c, "sq-3", associate, at(23, "16:21"));
+c = answerQuestion(c, "sq-5", director, at(24, "11:05"));
 c = tickChecklist(c, "bid-2", true, director, at(25, "18:30"));
 c = tickChecklist(c, "bid-4", true, partner, at(27, "16:00"));
 const icMinus3 = c;

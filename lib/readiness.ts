@@ -1,5 +1,18 @@
 // Coverage is code, not a model call (docs/AGENT.md).
+//
+// Rule: a memo section is supported by workstream lanes. Each lane's progress is the
+// share of its steps that are done. A section's coverage is the average progress of
+// the lanes that support it:
+//   full     at 60% or more
+//   partial  at 30% or more
+//   none     below 30%, or no supporting lane
+// Calibrated on the saved states: kickoff reads every section unsupported, midstream
+// reads two unsupported after the two beat-2 approvals, ic-minus-3 reads two. The
+// thresholds live here and nowhere else.
 import type { Coverage, Item, Lane, MemoSection, MemoSectionDef } from "./types";
+
+export const FULL_AT = 0.6;
+export const PARTIAL_AT = 0.3;
 
 export function laneProgress(laneId: string, items: Item[]): number {
   const laneItems = items.filter((i) => i.laneId === laneId);
@@ -10,8 +23,8 @@ export function laneProgress(laneId: string, items: Item[]): number {
 export function coverageFor(supportedBy: string[], items: Item[]): Coverage {
   if (supportedBy.length === 0) return "none";
   const avg = supportedBy.reduce((sum, id) => sum + laneProgress(id, items), 0) / supportedBy.length;
-  if (avg >= 0.6) return "full";
-  if (avg >= 0.3) return "partial";
+  if (avg >= FULL_AT) return "full";
+  if (avg >= PARTIAL_AT) return "partial";
   return "none";
 }
 
@@ -29,10 +42,12 @@ export function recomputeCoverage(sections: MemoSection[], items: Item[]): MemoS
   return sections.map((s) => ({ ...s, coverage: coverageFor(s.supportedBy, items) }));
 }
 
-// Which lanes owe an unsupported section. Used by the readiness view and the board.
+// Which lanes owe an unsupported section: the supporting lanes still under the partial line.
 export function lanesOwing(section: MemoSection, items: Item[], lanes: Lane[]): Lane[] {
   return section.supportedBy
-    .filter((id) => laneProgress(id, items) < 0.3)
+    .filter((id) => laneProgress(id, items) < PARTIAL_AT)
     .map((id) => lanes.find((l) => l.id === id))
     .filter((l): l is Lane => !!l);
 }
+
+export const coverageLabel: Record<Coverage, string> = { full: "Full", partial: "Partial", none: "Unsupported" };

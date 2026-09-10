@@ -31,6 +31,7 @@ app/
   (shell)/layout.tsx              # loop rail + header + avatar
   (shell)/deal/page.tsx           # Deal Room: board view, lanes view toggle, deal clock
   (shell)/deal/inbox/page.tsx     # evidence waiting: proposals to approve or reject
+  (shell)/deal/note/page.tsx      # tonight's working-group note, draft and send
   (shell)/deal/readiness/page.tsx # memo sections x coverage, open seller questions, bid checklist
   (shell)/deal/activity/page.tsx  # audit trail
   (shell)/close/page.tsx          # one screen: the hand-off (phase 3)

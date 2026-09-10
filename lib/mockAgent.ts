@@ -80,7 +80,7 @@ export function draftStatusNote(state: DealState, evidence: Evidence[]): string 
     "",
     `Status as of tonight, day ${c.dayIndex}. ${cap(n(c.daysToIc))} days to IC, ${n(c.daysToBid)} to the bid.`,
     "",
-    ...laneBlocks,
+    laneBlocks.join("\n\n"),
     "",
     sellerBlock,
     "",

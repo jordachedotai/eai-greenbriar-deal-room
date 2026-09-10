@@ -1,5 +1,5 @@
 "use client";
-import { partyById, personById } from "@/lib/data";
+import { partiesForLane, personById } from "@/lib/data";
 import { itemsByLane } from "@/lib/selectors";
 import { useStore } from "@/lib/store";
 import type { Lane as LaneT } from "@/lib/types";
@@ -11,14 +11,14 @@ export function Lane({ lane }: { lane: LaneT }) {
   const items = itemsByLane(state, lane.id);
   const done = items.filter((i) => i.status === "done").length;
   const owner = personById(lane.ownerId);
-  const party = partyById(lane.externalPartyId);
+  const parties = partiesForLane(lane);
   return (
     <section className="flex min-w-[176px] flex-1 flex-col" data-testid={`lane-${lane.id}`} aria-label={lane.name}>
       <header className="mb-2 flex items-start justify-between gap-2 px-1">
         <div className="min-w-0 leading-tight">
           <h3 className="text-[15px] font-semibold">{lane.name}</h3>
           <div className="text-[12px] text-muted">
-            {party ? party.name : lane.kind === "memo" ? "IC memo" : "Internal"}
+            {parties.length > 0 ? parties.map((p) => p.name).join(", ") : lane.kind === "memo" ? "IC memo" : "Internal"}
           </div>
         </div>
         <div className="flex items-center gap-2">

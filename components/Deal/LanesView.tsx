@@ -1,6 +1,6 @@
 "use client";
 import { fmtDate, isOverdue } from "@/lib/clock";
-import { lanes, partyById, personById } from "@/lib/data";
+import { lanes, partyNames, personById } from "@/lib/data";
 import { cardStatus, itemsByLane } from "@/lib/selectors";
 import { useStore } from "@/lib/store";
 import { StatusChip } from "./StatusChip";
@@ -30,12 +30,12 @@ export function LanesView() {
           <tbody>
             {lanes.filter((l) => l.kind === "workstream").map((lane) => {
               const items = itemsByLane(state, lane.id);
-              const party = partyById(lane.externalPartyId);
+              const party = partyNames(lane);
               return [
                 <tr key={lane.id} className="lane-row">
                   <td colSpan={7}>
                     {lane.name}
-                    {party ? ` with ${party.name}` : ""}
+                    {party ? ` with ${party}` : ""}
                   </td>
                 </tr>,
                 ...(items.length === 0

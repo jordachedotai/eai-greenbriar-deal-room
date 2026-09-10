@@ -210,6 +210,12 @@ a:hover {
   text-transform: uppercase;
   color: var(--color-muted);
 }
+.tracker.compact td {
+  padding: 5px 12px;
+}
+.tracker.compact th {
+  padding: 7px 12px;
+}
 .tracker td.empty-cell {
   color: var(--color-muted);
   background: repeating-linear-gradient(135deg, transparent 0 6px, rgba(97, 112, 95, 0.06) 6px 7px);

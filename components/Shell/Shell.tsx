@@ -14,6 +14,12 @@ export function Shell({ evidence, matches, children }: { evidence: Evidence[]; m
   const hydrated = useStore((s) => s.hasHydrated);
   const user = useStore((s) => s.currentUserId);
   const setSources = useStore((s) => s.setSources);
+  const clearToasts = useStore((s) => s.clearToasts);
+
+  // Toasts never outlive the screen they were raised on.
+  useEffect(() => {
+    clearToasts();
+  }, [pathname, clearToasts]);
 
   useEffect(() => {
     setSources(evidence, matches);

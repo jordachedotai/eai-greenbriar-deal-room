@@ -32,6 +32,19 @@ export function partyByKind(kind: Party["kind"]): Party | undefined {
   return partyList.find((p) => p.kind === kind);
 }
 
+// Every external party on a lane. Financing has two lenders in play.
+export function partiesForLane(lane: Lane): Party[] {
+  const def = workstreamDefs.find((w) => w.id === lane.id);
+  if (!def?.externalPartyKind) return [];
+  return partyList.filter((p) => p.kind === def.externalPartyKind);
+}
+
+export function partyNames(lane: Lane): string {
+  const names = partiesForLane(lane).map((p) => p.name);
+  if (names.length <= 1) return names[0] ?? "";
+  return `${names.slice(0, -1).join(", ")} and ${names[names.length - 1]}`;
+}
+
 export function partyById(id: string | undefined): Party | undefined {
   return id ? partyList.find((p) => p.id === id) : undefined;
 }

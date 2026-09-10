@@ -66,6 +66,8 @@ type Actions = {
   setAgentMode: (m: AgentMode) => void;
   toast: (text: string) => void;
   dismissToast: (id: number) => void;
+  clearToasts: () => void;
+  tickChecklist: (checklistId: string, done: boolean) => void;
   setPresenterOpen: (v: boolean) => void;
 };
 
@@ -150,9 +152,15 @@ export const useStore = create<Store>()(
       toast: (text) => {
         const id = Date.now() + Math.random();
         set((s) => ({ toasts: [...s.toasts, { id, text }] }));
-        setTimeout(() => set((s) => ({ toasts: s.toasts.filter((t) => t.id !== id) })), 2500);
+        setTimeout(() => set((s) => ({ toasts: s.toasts.filter((t) => t.id !== id) })), 4000);
       },
       dismissToast: (id) => set((s) => ({ toasts: s.toasts.filter((t) => t.id !== id) })),
+      clearToasts: () => set({ toasts: [] }),
+      tickChecklist: (checklistId, done) => {
+        const { state, currentUserId } = get();
+        if (!currentUserId) return;
+        set({ state: T.tickChecklist(state, checklistId, done, currentUserId, stampNow(state)) });
+      },
       setPresenterOpen: (presenterOpen) => set({ presenterOpen }),
     }),
     {
