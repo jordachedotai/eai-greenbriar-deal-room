@@ -1,0 +1,9 @@
+{
+  "id": "ev-04",
+  "kind": "note",
+  "from": "Lena Marsh, Northgate Technology Partners",
+  "partyId": "party-it",
+  "receivedAt": "2026-08-26T16:30:00Z",
+  "subject": "IT scoping call notes",
+  "body": "Scoping call held with Beacon's head of operations technology. Scope agreed: systems inventory, cyber assessment, integration and separation cost estimate, final report by day 30.\nBeacon runs a third-party TMS and an in-house WMS built in 2019. No dedicated security lead. Cyber assessment will need a two-day site visit.\nNext step: Beacon to send the license schedule."
+}

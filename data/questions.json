@@ -1,0 +1,66 @@
+[
+  {
+    "id": "sq-1",
+    "laneId": "qoe",
+    "text": "Monthly revenue by customer, FY23 to TTM",
+    "askedAt": "2026-08-26",
+    "dueAt": "2026-09-02",
+    "answered": true
+  },
+  {
+    "id": "sq-2",
+    "laneId": "qoe",
+    "text": "Add-back support for owner compensation and one-time legal fees",
+    "askedAt": "2026-08-29",
+    "dueAt": "2026-09-05",
+    "answered": false
+  },
+  {
+    "id": "sq-3",
+    "laneId": "qoe",
+    "text": "Working capital detail by month",
+    "askedAt": "2026-08-31",
+    "dueAt": "2026-09-07",
+    "answered": false
+  },
+  {
+    "id": "sq-4",
+    "laneId": "legal",
+    "text": "Customer contracts with change of control clauses",
+    "askedAt": "2026-08-27",
+    "dueAt": "2026-09-03",
+    "answered": true
+  },
+  {
+    "id": "sq-5",
+    "laneId": "legal",
+    "text": "Open litigation and any regulatory notices since 2023",
+    "askedAt": "2026-09-02",
+    "dueAt": "2026-09-09",
+    "answered": false
+  },
+  {
+    "id": "sq-6",
+    "laneId": "hr",
+    "text": "Benefits plan documents and 2026 renewal quotes",
+    "askedAt": "2026-09-04",
+    "dueAt": "2026-09-13",
+    "answered": false
+  },
+  {
+    "id": "sq-7",
+    "laneId": "it",
+    "text": "License schedule for the TMS and WMS",
+    "askedAt": "2026-09-06",
+    "dueAt": "2026-09-14",
+    "answered": false
+  },
+  {
+    "id": "sq-8",
+    "laneId": "financing",
+    "text": "Trailing twelve-month capex by facility",
+    "askedAt": "2026-09-07",
+    "dueAt": "2026-09-15",
+    "answered": false
+  }
+]

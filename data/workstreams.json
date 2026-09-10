@@ -1,0 +1,57 @@
+{
+  "company": { "id": "co-beacon", "codeName": "Project Beacon", "sector": "Specialty logistics and cross-dock", "room": "deal" },
+  "lanes": [
+    {
+      "id": "qoe", "name": "QoE", "ownerRole": "associate", "externalPartyKind": "accounting",
+      "steps": [
+        { "title": "Kickoff and scoping", "dueDay": 2, "doneLooksLike": "Scope letter signed and kickoff held" },
+        { "title": "Data request list issued", "dueDay": 4, "doneLooksLike": "Request list sent to the seller" },
+        { "title": "Databook v1 received", "dueDay": 20, "doneLooksLike": "Draft databook spreadsheet in hand" },
+        { "title": "Management interviews", "dueDay": 26, "doneLooksLike": "Interview notes filed" },
+        { "title": "Draft report", "dueDay": 27, "doneLooksLike": "Draft QoE report received" },
+        { "title": "Add-backs reconciled to model", "dueDay": 29, "doneLooksLike": "Add-backs tie to the model bridge" },
+        { "title": "Final report", "dueDay": 30, "doneLooksLike": "Final QoE report received" }
+      ]
+    },
+    {
+      "id": "legal", "name": "Legal", "ownerRole": "director", "externalPartyKind": "legal",
+      "steps": [
+        { "title": "NDA and clean team", "dueDay": 1, "doneLooksLike": "NDA countersigned, clean team list agreed" },
+        { "title": "Data room review", "dueDay": 10, "doneLooksLike": "Data room index reviewed and issues list started" },
+        { "title": "Material contracts summary", "dueDay": 20, "doneLooksLike": "Contracts summary memo received" },
+        { "title": "Litigation and regulatory review", "dueDay": 22, "doneLooksLike": "Litigation and regulatory memo received" },
+        { "title": "Purchase agreement first turn", "dueDay": 25, "doneLooksLike": "Marked-up purchase agreement sent to the seller" },
+        { "title": "Disclosure schedules", "dueDay": 30, "doneLooksLike": "Schedules reviewed against diligence findings" }
+      ]
+    },
+    {
+      "id": "hr", "name": "HR", "ownerRole": "analyst", "externalPartyKind": "hr",
+      "steps": [
+        { "title": "Employee census received", "dueDay": 12, "doneLooksLike": "Census spreadsheet in the drop zone" },
+        { "title": "Comp and benefits review", "dueDay": 19, "doneLooksLike": "Benefits benchmarking memo received" },
+        { "title": "Key employee agreements", "dueDay": 24, "doneLooksLike": "Agreements reviewed for change of control terms" },
+        { "title": "Retention plan draft", "dueDay": 28, "doneLooksLike": "Retention plan draft shared with the partner" }
+      ]
+    },
+    {
+      "id": "it", "name": "IT", "ownerRole": "analyst", "externalPartyKind": "it",
+      "steps": [
+        { "title": "Scoping call", "dueDay": 5, "doneLooksLike": "Scoping call notes filed" },
+        { "title": "Systems inventory", "dueDay": 15, "doneLooksLike": "Inventory of systems and licenses received" },
+        { "title": "Cyber assessment", "dueDay": 23, "doneLooksLike": "Cyber assessment memo received" },
+        { "title": "Integration and separation costs", "dueDay": 27, "doneLooksLike": "One-time cost estimate in the model" },
+        { "title": "Report", "dueDay": 30, "doneLooksLike": "Final IT report received" }
+      ]
+    },
+    {
+      "id": "financing", "name": "Financing", "ownerRole": "vp", "externalPartyKind": "lender",
+      "steps": [
+        { "title": "Lender outreach list", "dueDay": 3, "doneLooksLike": "Outreach list agreed with the partner" },
+        { "title": "Lender NDAs", "dueDay": 7, "doneLooksLike": "NDAs signed with every lender in process" },
+        { "title": "Term sheets received", "dueDay": 18, "doneLooksLike": "Term sheets from at least two lenders" },
+        { "title": "Lender diligence sessions", "dueDay": 24, "doneLooksLike": "Lender sessions with management held" },
+        { "title": "Commitment letters", "dueDay": 31, "doneLooksLike": "Signed commitment letters received" }
+      ]
+    }
+  ]
+}

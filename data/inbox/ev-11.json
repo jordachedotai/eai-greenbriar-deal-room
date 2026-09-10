@@ -1,0 +1,9 @@
+{
+  "id": "ev-11",
+  "kind": "email",
+  "from": "Tom Bradley <tbradley@cobaltridge.example>",
+  "partyId": "party-lender-a",
+  "receivedAt": "2026-09-12T09:05:00Z",
+  "subject": "Project Beacon: commitment",
+  "body": "Owen,\n\nQuick update: commitment letter sent this morning to your deal counsel for review. Credit committee met yesterday.\n\nLet me know if you need anything else before the session with the CFO.\n\nTom"
+}

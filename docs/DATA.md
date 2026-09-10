@@ -17,7 +17,7 @@ type Lane = { id: string; companyId: string; name: string; kind: "workstream" | 
 
 type Item = {
   id: string; laneId: string; title: string; ownerId: string; dueDate: string;
-  status: "notStarted" | "inProgress" | "blocked" | "done";
+  status: "notStarted" | "inProgress" | "blocked" | "done";   // "question out" is derived from the latest proposal decision, never stored
   doneLooksLike: string;                 // what proves it
   evidenceIds: string[];
 };
@@ -46,9 +46,9 @@ The Portfolio Room later reuses Company, Lane (kind "initiative"), Item (a commi
 ## The synthetic deal: Project Beacon
 
 - **Target:** Beacon, a regional specialty logistics and cross-dock operator, founder-owned, sell-side run by a fictional bank. Not aerospace. Not any real company.
-- **Deal clock:** IC approved the Criteria Worksheet on day 0. IC memo and final bid due day 30. Demo "today" is day 21 in `midstream` (9 days to IC). Bid deadline to the banker is day 33.
+- **Deal clock:** IC approved the Criteria Worksheet on day 0 (Aug 21). IC memo due day 30 (Sept 20). Bid deadline to the banker day 33 (Sept 23). Demo "today" is day 21 (Sept 11), frozen in the saved state so the clocks read 9 and 12 on any date. Beacon's calendar is synthetic; Apex's Sept 30 is not used.
 - **Team (fictional names, real roles):** Partner, Director, VP (current user), Associate, Analyst. `team.json` is hand-edited so real names can be swapped with consent.
-- **External parties:** one accounting advisor, one law firm, one HR advisor, one IT advisor, two lenders, one bank, the seller.
+- **External parties:** one accounting advisor, one law firm, one HR advisor, one IT advisor, two lenders, one bank, the seller. Hand-written in `parties.json` (the fourth names file) because the strength rule "sender is the lane's party" needs them as data.
 
 ## Workstreams and steps (placeholders until AJ's lists arrive)
 

@@ -1,0 +1,10 @@
+{
+  "id": "ev-03",
+  "kind": "file",
+  "from": "Meridian People Advisors drop zone",
+  "partyId": "party-hr",
+  "receivedAt": "2026-09-02T14:05:00Z",
+  "subject": "Beacon_Employee_Census_Aug2026.xlsx",
+  "body": "Employee census for Beacon as of August 2026. 412 employees across four sites. Columns: employee id, site, title, hire date, base, bonus target, benefits tier.\nUploaded by Meridian People Advisors to the Beacon drop zone.",
+  "attachmentName": "Beacon_Employee_Census_Aug2026.xlsx"
+}

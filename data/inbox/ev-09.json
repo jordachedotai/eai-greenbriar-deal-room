@@ -1,0 +1,9 @@
+{
+  "id": "ev-09",
+  "kind": "requestListUpdate",
+  "from": "Beacon Logistics Holdings via Stonebridge Partners",
+  "partyId": "party-seller",
+  "receivedAt": "2026-09-10T17:30:00Z",
+  "subject": "Data request list update: 14 of 28 items answered",
+  "body": "The seller has answered 14 of 28 items on the QoE data request list. Newly answered: monthly revenue by customer, customer contracts with change of control terms.\nStill open: add-back support for owner compensation and one-time legal fees, working capital detail by month, open litigation and regulatory notices since 2023, benefits plan documents, TMS and WMS license schedule, capex by facility."
+}

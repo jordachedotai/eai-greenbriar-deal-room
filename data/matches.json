@@ -1,0 +1,56 @@
+[
+  {
+    "evidenceId": "ev-01",
+    "itemId": "qoe-3",
+    "proposedStatus": "done",
+    "matchedPhrase": "attached draft databook v1"
+  },
+  {
+    "evidenceId": "ev-02",
+    "itemId": "legal-3",
+    "proposedStatus": "done",
+    "matchedPhrase": "material contracts summary"
+  },
+  {
+    "evidenceId": "ev-03",
+    "itemId": "hr-1",
+    "proposedStatus": "done",
+    "matchedPhrase": "Employee census"
+  },
+  {
+    "evidenceId": "ev-04",
+    "itemId": "it-1",
+    "proposedStatus": "done",
+    "matchedPhrase": "Scoping call held"
+  },
+  {
+    "evidenceId": "ev-05",
+    "itemId": "financing-3",
+    "proposedStatus": "inProgress",
+    "matchedPhrase": "our term sheet"
+  },
+  {
+    "evidenceId": "ev-06",
+    "itemId": "financing-3",
+    "proposedStatus": "done",
+    "matchedPhrase": "Larkspur term sheet"
+  },
+  {
+    "evidenceId": "ev-07",
+    "itemId": "qoe-4",
+    "proposedStatus": "inProgress",
+    "matchedPhrase": "Management meeting"
+  },
+  {
+    "evidenceId": "ev-10",
+    "itemId": "legal-4",
+    "proposedStatus": "done",
+    "matchedPhrase": "legal is basically done"
+  },
+  {
+    "evidenceId": "ev-11",
+    "itemId": "financing-5",
+    "proposedStatus": "done",
+    "matchedPhrase": "commitment letter sent"
+  }
+]

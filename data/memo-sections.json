@@ -1,0 +1,17 @@
+{
+  "laneName": "Memo sections",
+  "ownerRole": "vp",
+  "dueDay": 29,
+  "sections": [
+    { "id": "memo-company", "name": "Company Overview", "placeholder": false, "supportedBy": ["qoe", "legal"], "ownerRole": "associate" },
+    { "id": "memo-industry", "name": "Industry Overview", "placeholder": false, "supportedBy": ["it"], "ownerRole": "analyst" },
+    { "id": "memo-merits", "name": "Merits", "placeholder": false, "supportedBy": ["qoe", "financing"], "ownerRole": "vp" },
+    { "id": "memo-considerations", "name": "Considerations and Diligence Focus Areas", "placeholder": false, "supportedBy": ["legal", "hr", "it"], "ownerRole": "vp" },
+    { "id": "memo-levers", "name": "Preliminary Growth and Value Creation Levers", "placeholder": false, "supportedBy": ["it", "hr"], "ownerRole": "director" },
+    { "id": "memo-financial", "name": "Financial Summary", "placeholder": true, "supportedBy": ["qoe"], "ownerRole": "associate" },
+    { "id": "memo-valuation", "name": "Valuation and Returns", "placeholder": true, "supportedBy": ["qoe", "financing"], "ownerRole": "associate" },
+    { "id": "memo-financing", "name": "Financing", "placeholder": true, "supportedBy": ["financing"], "ownerRole": "vp" },
+    { "id": "memo-risks", "name": "Key Risks", "placeholder": true, "supportedBy": ["legal", "hr"], "ownerRole": "vp" },
+    { "id": "memo-status", "name": "Diligence Status", "placeholder": true, "supportedBy": ["qoe", "legal", "hr", "it", "financing"], "ownerRole": "vp" }
+  ]
+}

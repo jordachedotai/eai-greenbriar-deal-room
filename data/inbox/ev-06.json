@@ -1,0 +1,10 @@
+{
+  "id": "ev-06",
+  "kind": "email",
+  "from": "Maria Castellano <mcastellano@larkspurcredit.example>",
+  "partyId": "party-lender-b",
+  "receivedAt": "2026-09-08T15:45:00Z",
+  "subject": "Larkspur term sheet for Project Beacon",
+  "body": "Owen,\n\nPlease see attached the Larkspur term sheet for Project Beacon. We are at 4.25x with a delayed draw facility for the two cross-dock expansions.\n\nWe would like a session with the CFO next week before credit committee.\n\nMaria",
+  "attachmentName": "Larkspur_Term_Sheet_Beacon.pdf"
+}

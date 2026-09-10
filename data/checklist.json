@@ -1,0 +1,38 @@
+[
+  {
+    "id": "bid-1",
+    "name": "Offer letter",
+    "placeholder": true,
+    "done": false
+  },
+  {
+    "id": "bid-2",
+    "name": "Purchase agreement mark-up",
+    "placeholder": true,
+    "done": false
+  },
+  {
+    "id": "bid-3",
+    "name": "Financing commitments",
+    "placeholder": true,
+    "done": false
+  },
+  {
+    "id": "bid-4",
+    "name": "Equity commitment",
+    "placeholder": true,
+    "done": false
+  },
+  {
+    "id": "bid-5",
+    "name": "IC approval",
+    "placeholder": true,
+    "done": false
+  },
+  {
+    "id": "bid-6",
+    "name": "Open confirmatory items",
+    "placeholder": true,
+    "done": false
+  }
+]

@@ -37,7 +37,7 @@ app/
   (shell)/portfolio/page.tsx      # Portfolio Room (phase 4, placeholder until then)
   api/agent/route.ts
 components/  Shell/ LoopRail Header Avatar · Deal/ Board Lane ItemCard DealClock · Inbox/ ProposalCard EvidenceViewer · Readiness/ CoverageGrid QuestionList BidChecklist · Drafts/ StatusNote · Presenter/ PresenterMenu SimulateButton
-data/        team.json workstreams.json memo-sections.json evidence/ inbox/ dropzone/ demo-states.json
+data/        team.json parties.json workstreams.json memo-sections.json evidence/ inbox/ dropzone/ demo-states.json
 lib/         types data store sources agent prompts proposals readiness simulate
 ```
 
@@ -50,4 +50,4 @@ lib/         types data store sources agent prompts proposals readiness simulate
 5. The loop rail shows five stages with Deal Room active, Close and Portfolio dimmed with their names, Thesis and Deal memory dimmed.
 6. Presenter menu (Shift+P): jump to state `kickoff`, `midstream`, `ic-minus-3`; "simulate evidence arriving"; agent mode toggle.
 7. Mock mode passes the Playwright walkthrough with wifi off. No console errors.
-8. Swapping `data/team.json` and `data/workstreams.json` needs no code changes.
+8. Swapping the four names files (`team.json`, `parties.json`, `workstreams.json`, `memo-sections.json`) needs no code changes.

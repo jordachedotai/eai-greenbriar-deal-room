@@ -1,0 +1,10 @@
+{
+  "id": "ev-05",
+  "kind": "email",
+  "from": "Tom Bradley <tbradley@cobaltridge.example>",
+  "partyId": "party-lender-a",
+  "receivedAt": "2026-09-06T11:20:00Z",
+  "subject": "Project Beacon: Cobalt Ridge term sheet",
+  "body": "Owen,\n\nAttached is our term sheet for Project Beacon: unitranche, 4.5x leverage, pricing as discussed. Subject to our diligence session with management and credit committee approval.\n\nHappy to walk through it tomorrow.\n\nTom",
+  "attachmentName": "Cobalt_Ridge_Term_Sheet_Beacon.pdf"
+}

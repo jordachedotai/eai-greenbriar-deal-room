@@ -10,7 +10,7 @@ The demo shows the tracker updating itself from evidence, with AJ approving ever
 
 ### Deal Room (home)
 - Header: deal name, stage on the loop, deal clock (days to IC, days to bid deadline; two clocks).
-- Board view: one column per lane. Lanes: QoE, Legal, HR, IT, Financing, Memo sections. Cards are items with owner, due date, status chip, evidence count.
+- Board view: one column per lane. Lanes: QoE, Legal, HR, IT, Financing, Memo sections. Cards are items with owner, due date, status chip, evidence count. A card with a confirmation request out shows a "question out" chip derived from its latest proposal decision, not a sixth status.
 - Lanes view: rows grouped by lane, the shape of AJ's Excel tracker. This is the "before" screen when opened in state `kickoff`.
 - Work strip at top: "3 waiting on you," "2 blocked," "5 due this week."
 
@@ -35,7 +35,7 @@ The demo shows the tracker updating itself from evidence, with AJ approving ever
 
 ## States
 - `kickoff`: IC approved yesterday. Tracker empty. The agent proposes the workstream plan from the playbook. One primary button: "Set up the sprint."
-- `midstream` (room default): week 4, day 5. Nine days to IC. Three items in the inbox.
+- `midstream` (room default): day 21 of 30. Nine days to IC, twelve to the bid deadline. Three items in the inbox.
 - `ic-minus-3`: readiness view with two sections still unsupported and the bid checklist half done.
 
 ## Not in v1

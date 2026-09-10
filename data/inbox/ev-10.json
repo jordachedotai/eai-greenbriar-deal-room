@@ -1,0 +1,9 @@
+{
+  "id": "ev-10",
+  "kind": "email",
+  "from": "Samuel Adeyemi <sadeyemi@brightwatercole.example>",
+  "partyId": "party-legal",
+  "receivedAt": "2026-09-11T12:55:00Z",
+  "subject": "Re: Beacon",
+  "body": "legal is basically done on our side, will send the rest early next week"
+}

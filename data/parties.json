@@ -1,0 +1,10 @@
+[
+  { "id": "party-accounting", "name": "Harrow & Finch Advisory", "kind": "accounting" },
+  { "id": "party-legal", "name": "Brightwater Cole LLP", "kind": "legal" },
+  { "id": "party-hr", "name": "Meridian People Advisors", "kind": "hr" },
+  { "id": "party-it", "name": "Northgate Technology Partners", "kind": "it" },
+  { "id": "party-lender-a", "name": "Cobalt Ridge Capital", "kind": "lender" },
+  { "id": "party-lender-b", "name": "Larkspur Credit Partners", "kind": "lender" },
+  { "id": "party-banker", "name": "Stonebridge Partners", "kind": "banker" },
+  { "id": "party-seller", "name": "Beacon Logistics Holdings", "kind": "seller" }
+]

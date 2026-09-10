@@ -1,0 +1,10 @@
+{
+  "id": "ev-02",
+  "kind": "email",
+  "from": "Samuel Adeyemi <sadeyemi@brightwatercole.example>",
+  "partyId": "party-legal",
+  "receivedAt": "2026-09-11T09:40:00Z",
+  "subject": "Project Beacon: material contracts summary",
+  "body": "Dana, Owen,\n\nAttached is the material contracts summary for Project Beacon. We reviewed 42 customer and carrier agreements in the data room. Six customer contracts carry change of control consent rights, which we flag for the purchase agreement.\n\nThe litigation and regulatory memo is in second draft and should reach you Tuesday.\n\nSam",
+  "attachmentName": "Beacon_Material_Contracts_Summary.pdf"
+}

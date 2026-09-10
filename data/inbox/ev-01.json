@@ -1,0 +1,10 @@
+{
+  "id": "ev-01",
+  "kind": "email",
+  "from": "Rachel Okonkwo <r.okonkwo@harrowfinch.example>",
+  "partyId": "party-accounting",
+  "receivedAt": "2026-09-11T08:12:00Z",
+  "subject": "Project Beacon: draft databook v1 attached",
+  "body": "Owen,\n\nPlease find attached draft databook v1 for Project Beacon covering FY23 through TTM June 2026. Revenue and gross margin tabs are complete. The add-back schedule is still being reconciled and will follow in v2 next week.\n\nWe are still waiting on the seller for the working capital detail by month.\n\nRachel",
+  "attachmentName": "Beacon_Databook_v1_DRAFT.xlsx"
+}

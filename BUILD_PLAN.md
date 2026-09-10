@@ -1,10 +1,10 @@
 # Build plan: Greenbriar Deal Room
 
-Repo: `~/Documents/Tools/eai-greenbriar-deal-room`. Canon docs stay in this vault folder; the repo carries a copy of `CLAUDE.md` and `docs/`. Deploys to Vercel in mock mode like the scheduler.
+Repo: `~/Tools/eai-greenbriar-deal-room` (same folder as `~/Documents/Tools`). Canon docs stay in this vault folder; the repo carries a copy of `CLAUDE.md` and `docs/`. Deploys to Vercel in mock mode like the scheduler.
 
 ## Phase 1: model, fixtures, shell (day 1, Wed 09-10)
 - `lib/types.ts` from `docs/DATA.md`. Store with `STORE_VERSION`.
-- Names files by hand: `team.json`, `parties.json`, `workstreams.json`, `memo-sections.json`. `scripts/gen-fixtures.ts` builds items, evidence, questions, checklist. `scripts/gen-states.ts` builds the three states.
+- Four names files by hand: `team.json`, `parties.json`, `workstreams.json`, `memo-sections.json`. `scripts/gen-fixtures.ts` builds items, evidence, questions, checklist. `scripts/gen-states.ts` builds the three states.
 - Shell: login, loop rail, header, avatar. Deal Room board and lanes views reading state `midstream`.
 
 ## Phase 2: proposals, approval, note (day 2, Thu 09-11 morning)

@@ -1,0 +1,7 @@
+[
+  { "id": "p-partner", "name": "Marcus Hale", "role": "partner", "isCurrentUser": false },
+  { "id": "p-director", "name": "Dana Whitfield", "role": "director", "isCurrentUser": false },
+  { "id": "p-vp", "name": "Owen Carver", "role": "vp", "isCurrentUser": true },
+  { "id": "p-associate", "name": "Priya Nandakumar", "role": "associate", "isCurrentUser": false },
+  { "id": "p-analyst", "name": "Theo Lindqvist", "role": "analyst", "isCurrentUser": false }
+]

@@ -1,0 +1,2211 @@
+{
+  "version": 1,
+  "generatedFrom": "scripts/gen-states.ts",
+  "states": {
+    "kickoff": {
+      "name": "kickoff",
+      "today": "2026-08-22",
+      "day0": "2026-08-21",
+      "icDate": "2026-09-20",
+      "bidDate": "2026-09-23",
+      "items": [],
+      "proposals": [],
+      "activity": [
+        {
+          "id": "act-0000",
+          "at": "2026-08-21T16:30:00Z",
+          "by": "p-partner",
+          "action": "IC approved the Criteria Worksheet. Thirty days to the IC memo and final bid."
+        }
+      ],
+      "inboxEvidenceIds": [],
+      "processedEvidenceIds": [],
+      "sellerQuestions": [],
+      "bidChecklist": [
+        {
+          "id": "bid-1",
+          "name": "Offer letter",
+          "placeholder": true,
+          "done": false
+        },
+        {
+          "id": "bid-2",
+          "name": "Purchase agreement mark-up",
+          "placeholder": true,
+          "done": false
+        },
+        {
+          "id": "bid-3",
+          "name": "Financing commitments",
+          "placeholder": true,
+          "done": false
+        },
+        {
+          "id": "bid-4",
+          "name": "Equity commitment",
+          "placeholder": true,
+          "done": false
+        },
+        {
+          "id": "bid-5",
+          "name": "IC approval",
+          "placeholder": true,
+          "done": false
+        },
+        {
+          "id": "bid-6",
+          "name": "Open confirmatory items",
+          "placeholder": true,
+          "done": false
+        }
+      ],
+      "memoSections": [
+        {
+          "id": "memo-company",
+          "name": "Company Overview",
+          "placeholder": false,
+          "supportedBy": [
+            "qoe",
+            "legal"
+          ],
+          "coverage": "none"
+        },
+        {
+          "id": "memo-industry",
+          "name": "Industry Overview",
+          "placeholder": false,
+          "supportedBy": [
+            "it"
+          ],
+          "coverage": "none"
+        },
+        {
+          "id": "memo-merits",
+          "name": "Merits",
+          "placeholder": false,
+          "supportedBy": [
+            "qoe",
+            "financing"
+          ],
+          "coverage": "none"
+        },
+        {
+          "id": "memo-considerations",
+          "name": "Considerations and Diligence Focus Areas",
+          "placeholder": false,
+          "supportedBy": [
+            "legal",
+            "hr",
+            "it"
+          ],
+          "coverage": "none"
+        },
+        {
+          "id": "memo-levers",
+          "name": "Preliminary Growth and Value Creation Levers",
+          "placeholder": false,
+          "supportedBy": [
+            "it",
+            "hr"
+          ],
+          "coverage": "none"
+        },
+        {
+          "id": "memo-financial",
+          "name": "Financial Summary",
+          "placeholder": true,
+          "supportedBy": [
+            "qoe"
+          ],
+          "coverage": "none"
+        },
+        {
+          "id": "memo-valuation",
+          "name": "Valuation and Returns",
+          "placeholder": true,
+          "supportedBy": [
+            "qoe",
+            "financing"
+          ],
+          "coverage": "none"
+        },
+        {
+          "id": "memo-financing",
+          "name": "Financing",
+          "placeholder": true,
+          "supportedBy": [
+            "financing"
+          ],
+          "coverage": "none"
+        },
+        {
+          "id": "memo-risks",
+          "name": "Key Risks",
+          "placeholder": true,
+          "supportedBy": [
+            "legal",
+            "hr"
+          ],
+          "coverage": "none"
+        },
+        {
+          "id": "memo-status",
+          "name": "Diligence Status",
+          "placeholder": true,
+          "supportedBy": [
+            "qoe",
+            "legal",
+            "hr",
+            "it",
+            "financing"
+          ],
+          "coverage": "none"
+        }
+      ]
+    },
+    "midstream": {
+      "name": "midstream",
+      "today": "2026-09-11",
+      "day0": "2026-08-21",
+      "icDate": "2026-09-20",
+      "bidDate": "2026-09-23",
+      "items": [
+        {
+          "id": "qoe-1",
+          "laneId": "qoe",
+          "title": "Kickoff and scoping",
+          "ownerId": "p-associate",
+          "dueDate": "2026-08-23",
+          "status": "done",
+          "doneLooksLike": "Scope letter signed and kickoff held",
+          "evidenceIds": []
+        },
+        {
+          "id": "qoe-2",
+          "laneId": "qoe",
+          "title": "Data request list issued",
+          "ownerId": "p-associate",
+          "dueDate": "2026-08-25",
+          "status": "done",
+          "doneLooksLike": "Request list sent to the seller",
+          "evidenceIds": []
+        },
+        {
+          "id": "qoe-3",
+          "laneId": "qoe",
+          "title": "Databook v1 received",
+          "ownerId": "p-associate",
+          "dueDate": "2026-09-10",
+          "status": "inProgress",
+          "doneLooksLike": "Draft databook spreadsheet in hand",
+          "evidenceIds": []
+        },
+        {
+          "id": "qoe-4",
+          "laneId": "qoe",
+          "title": "Management interviews",
+          "ownerId": "p-associate",
+          "dueDate": "2026-09-16",
+          "status": "inProgress",
+          "doneLooksLike": "Interview notes filed",
+          "evidenceIds": [
+            "ev-07"
+          ]
+        },
+        {
+          "id": "qoe-5",
+          "laneId": "qoe",
+          "title": "Draft report",
+          "ownerId": "p-associate",
+          "dueDate": "2026-09-17",
+          "status": "notStarted",
+          "doneLooksLike": "Draft QoE report received",
+          "evidenceIds": []
+        },
+        {
+          "id": "qoe-6",
+          "laneId": "qoe",
+          "title": "Add-backs reconciled to model",
+          "ownerId": "p-associate",
+          "dueDate": "2026-09-19",
+          "status": "notStarted",
+          "doneLooksLike": "Add-backs tie to the model bridge",
+          "evidenceIds": []
+        },
+        {
+          "id": "qoe-7",
+          "laneId": "qoe",
+          "title": "Final report",
+          "ownerId": "p-associate",
+          "dueDate": "2026-09-20",
+          "status": "notStarted",
+          "doneLooksLike": "Final QoE report received",
+          "evidenceIds": []
+        },
+        {
+          "id": "legal-1",
+          "laneId": "legal",
+          "title": "NDA and clean team",
+          "ownerId": "p-director",
+          "dueDate": "2026-08-22",
+          "status": "done",
+          "doneLooksLike": "NDA countersigned, clean team list agreed",
+          "evidenceIds": []
+        },
+        {
+          "id": "legal-2",
+          "laneId": "legal",
+          "title": "Data room review",
+          "ownerId": "p-director",
+          "dueDate": "2026-08-31",
+          "status": "done",
+          "doneLooksLike": "Data room index reviewed and issues list started",
+          "evidenceIds": []
+        },
+        {
+          "id": "legal-3",
+          "laneId": "legal",
+          "title": "Material contracts summary",
+          "ownerId": "p-director",
+          "dueDate": "2026-09-10",
+          "status": "inProgress",
+          "doneLooksLike": "Contracts summary memo received",
+          "evidenceIds": []
+        },
+        {
+          "id": "legal-4",
+          "laneId": "legal",
+          "title": "Litigation and regulatory review",
+          "ownerId": "p-director",
+          "dueDate": "2026-09-12",
+          "status": "inProgress",
+          "doneLooksLike": "Litigation and regulatory memo received",
+          "evidenceIds": []
+        },
+        {
+          "id": "legal-5",
+          "laneId": "legal",
+          "title": "Purchase agreement first turn",
+          "ownerId": "p-director",
+          "dueDate": "2026-09-15",
+          "status": "blocked",
+          "doneLooksLike": "Marked-up purchase agreement sent to the seller",
+          "evidenceIds": []
+        },
+        {
+          "id": "legal-6",
+          "laneId": "legal",
+          "title": "Disclosure schedules",
+          "ownerId": "p-director",
+          "dueDate": "2026-09-20",
+          "status": "notStarted",
+          "doneLooksLike": "Schedules reviewed against diligence findings",
+          "evidenceIds": []
+        },
+        {
+          "id": "hr-1",
+          "laneId": "hr",
+          "title": "Employee census received",
+          "ownerId": "p-analyst",
+          "dueDate": "2026-09-02",
+          "status": "done",
+          "doneLooksLike": "Census spreadsheet in the drop zone",
+          "evidenceIds": [
+            "ev-03"
+          ]
+        },
+        {
+          "id": "hr-2",
+          "laneId": "hr",
+          "title": "Comp and benefits review",
+          "ownerId": "p-analyst",
+          "dueDate": "2026-09-09",
+          "status": "blocked",
+          "doneLooksLike": "Benefits benchmarking memo received",
+          "evidenceIds": []
+        },
+        {
+          "id": "hr-3",
+          "laneId": "hr",
+          "title": "Key employee agreements",
+          "ownerId": "p-analyst",
+          "dueDate": "2026-09-14",
+          "status": "inProgress",
+          "doneLooksLike": "Agreements reviewed for change of control terms",
+          "evidenceIds": []
+        },
+        {
+          "id": "hr-4",
+          "laneId": "hr",
+          "title": "Retention plan draft",
+          "ownerId": "p-analyst",
+          "dueDate": "2026-09-18",
+          "status": "notStarted",
+          "doneLooksLike": "Retention plan draft shared with the partner",
+          "evidenceIds": []
+        },
+        {
+          "id": "it-1",
+          "laneId": "it",
+          "title": "Scoping call",
+          "ownerId": "p-analyst",
+          "dueDate": "2026-08-26",
+          "status": "done",
+          "doneLooksLike": "Scoping call notes filed",
+          "evidenceIds": [
+            "ev-04"
+          ]
+        },
+        {
+          "id": "it-2",
+          "laneId": "it",
+          "title": "Systems inventory",
+          "ownerId": "p-analyst",
+          "dueDate": "2026-09-05",
+          "status": "inProgress",
+          "doneLooksLike": "Inventory of systems and licenses received",
+          "evidenceIds": []
+        },
+        {
+          "id": "it-3",
+          "laneId": "it",
+          "title": "Cyber assessment",
+          "ownerId": "p-analyst",
+          "dueDate": "2026-09-13",
+          "status": "notStarted",
+          "doneLooksLike": "Cyber assessment memo received",
+          "evidenceIds": []
+        },
+        {
+          "id": "it-4",
+          "laneId": "it",
+          "title": "Integration and separation costs",
+          "ownerId": "p-analyst",
+          "dueDate": "2026-09-17",
+          "status": "notStarted",
+          "doneLooksLike": "One-time cost estimate in the model",
+          "evidenceIds": []
+        },
+        {
+          "id": "it-5",
+          "laneId": "it",
+          "title": "Report",
+          "ownerId": "p-analyst",
+          "dueDate": "2026-09-20",
+          "status": "notStarted",
+          "doneLooksLike": "Final IT report received",
+          "evidenceIds": []
+        },
+        {
+          "id": "financing-1",
+          "laneId": "financing",
+          "title": "Lender outreach list",
+          "ownerId": "p-vp",
+          "dueDate": "2026-08-24",
+          "status": "done",
+          "doneLooksLike": "Outreach list agreed with the partner",
+          "evidenceIds": []
+        },
+        {
+          "id": "financing-2",
+          "laneId": "financing",
+          "title": "Lender NDAs",
+          "ownerId": "p-vp",
+          "dueDate": "2026-08-28",
+          "status": "done",
+          "doneLooksLike": "NDAs signed with every lender in process",
+          "evidenceIds": []
+        },
+        {
+          "id": "financing-3",
+          "laneId": "financing",
+          "title": "Term sheets received",
+          "ownerId": "p-vp",
+          "dueDate": "2026-09-08",
+          "status": "done",
+          "doneLooksLike": "Term sheets from at least two lenders",
+          "evidenceIds": [
+            "ev-05",
+            "ev-06"
+          ]
+        },
+        {
+          "id": "financing-4",
+          "laneId": "financing",
+          "title": "Lender diligence sessions",
+          "ownerId": "p-vp",
+          "dueDate": "2026-09-14",
+          "status": "inProgress",
+          "doneLooksLike": "Lender sessions with management held",
+          "evidenceIds": []
+        },
+        {
+          "id": "financing-5",
+          "laneId": "financing",
+          "title": "Commitment letters",
+          "ownerId": "p-vp",
+          "dueDate": "2026-09-21",
+          "status": "notStarted",
+          "doneLooksLike": "Signed commitment letters received",
+          "evidenceIds": []
+        },
+        {
+          "id": "memo-company",
+          "laneId": "memo",
+          "title": "Company Overview",
+          "ownerId": "p-associate",
+          "dueDate": "2026-09-19",
+          "status": "inProgress",
+          "doneLooksLike": "Section drafted and reviewed by the partner",
+          "evidenceIds": []
+        },
+        {
+          "id": "memo-industry",
+          "laneId": "memo",
+          "title": "Industry Overview",
+          "ownerId": "p-analyst",
+          "dueDate": "2026-09-19",
+          "status": "inProgress",
+          "doneLooksLike": "Section drafted and reviewed by the partner",
+          "evidenceIds": []
+        },
+        {
+          "id": "memo-merits",
+          "laneId": "memo",
+          "title": "Merits",
+          "ownerId": "p-vp",
+          "dueDate": "2026-09-19",
+          "status": "notStarted",
+          "doneLooksLike": "Section drafted and reviewed by the partner",
+          "evidenceIds": []
+        },
+        {
+          "id": "memo-considerations",
+          "laneId": "memo",
+          "title": "Considerations and Diligence Focus Areas",
+          "ownerId": "p-vp",
+          "dueDate": "2026-09-19",
+          "status": "notStarted",
+          "doneLooksLike": "Section drafted and reviewed by the partner",
+          "evidenceIds": []
+        },
+        {
+          "id": "memo-levers",
+          "laneId": "memo",
+          "title": "Preliminary Growth and Value Creation Levers",
+          "ownerId": "p-director",
+          "dueDate": "2026-09-19",
+          "status": "notStarted",
+          "doneLooksLike": "Section drafted and reviewed by the partner",
+          "evidenceIds": []
+        },
+        {
+          "id": "memo-financial",
+          "laneId": "memo",
+          "title": "Financial Summary (placeholder)",
+          "ownerId": "p-associate",
+          "dueDate": "2026-09-19",
+          "status": "notStarted",
+          "doneLooksLike": "Section confirmed with the sponsor, then drafted",
+          "evidenceIds": []
+        },
+        {
+          "id": "memo-valuation",
+          "laneId": "memo",
+          "title": "Valuation and Returns (placeholder)",
+          "ownerId": "p-associate",
+          "dueDate": "2026-09-19",
+          "status": "notStarted",
+          "doneLooksLike": "Section confirmed with the sponsor, then drafted",
+          "evidenceIds": []
+        },
+        {
+          "id": "memo-financing",
+          "laneId": "memo",
+          "title": "Financing (placeholder)",
+          "ownerId": "p-vp",
+          "dueDate": "2026-09-19",
+          "status": "notStarted",
+          "doneLooksLike": "Section confirmed with the sponsor, then drafted",
+          "evidenceIds": []
+        },
+        {
+          "id": "memo-risks",
+          "laneId": "memo",
+          "title": "Key Risks (placeholder)",
+          "ownerId": "p-vp",
+          "dueDate": "2026-09-19",
+          "status": "notStarted",
+          "doneLooksLike": "Section confirmed with the sponsor, then drafted",
+          "evidenceIds": []
+        },
+        {
+          "id": "memo-status",
+          "laneId": "memo",
+          "title": "Diligence Status (placeholder)",
+          "ownerId": "p-vp",
+          "dueDate": "2026-09-19",
+          "status": "notStarted",
+          "doneLooksLike": "Section confirmed with the sponsor, then drafted",
+          "evidenceIds": []
+        }
+      ],
+      "proposals": [
+        {
+          "id": "prop-ev-04",
+          "evidenceId": "ev-04",
+          "itemId": "it-1",
+          "proposedStatus": "done",
+          "quotedSource": "Scoping call held with Beacon's head of operations technology.",
+          "strength": "clear",
+          "decision": {
+            "by": "p-vp",
+            "at": "2026-08-26T18:20:00Z",
+            "action": "approved"
+          }
+        },
+        {
+          "id": "prop-ev-03",
+          "evidenceId": "ev-03",
+          "itemId": "hr-1",
+          "proposedStatus": "done",
+          "quotedSource": "Employee census for Beacon as of August 2026.",
+          "strength": "clear",
+          "decision": {
+            "by": "p-analyst",
+            "at": "2026-09-02T15:10:00Z",
+            "action": "approved"
+          }
+        },
+        {
+          "id": "prop-ev-05",
+          "evidenceId": "ev-05",
+          "itemId": "financing-3",
+          "proposedStatus": "inProgress",
+          "quotedSource": "Attached is our term sheet for Project Beacon: unitranche, 4.5x leverage, pricing as discussed.",
+          "strength": "clear",
+          "decision": {
+            "by": "p-vp",
+            "at": "2026-09-06T18:10:00Z",
+            "action": "approved"
+          }
+        },
+        {
+          "id": "prop-ev-06",
+          "evidenceId": "ev-06",
+          "itemId": "financing-3",
+          "proposedStatus": "done",
+          "quotedSource": "Please see attached the Larkspur term sheet for Project Beacon.",
+          "strength": "clear",
+          "decision": {
+            "by": "p-vp",
+            "at": "2026-09-08T18:05:00Z",
+            "action": "approved"
+          }
+        },
+        {
+          "id": "prop-ev-07",
+          "evidenceId": "ev-07",
+          "itemId": "qoe-4",
+          "proposedStatus": "inProgress",
+          "quotedSource": "Management meeting with the Beacon founder and CFO scheduled for 2026-09-16 at Beacon's main cross-dock site.",
+          "strength": "thin",
+          "decision": {
+            "by": "p-vp",
+            "at": "2026-09-09T18:15:00Z",
+            "action": "approved"
+          }
+        },
+        {
+          "id": "prop-ev-01",
+          "evidenceId": "ev-01",
+          "itemId": "qoe-3",
+          "proposedStatus": "done",
+          "quotedSource": "Please find attached draft databook v1 for Project Beacon covering FY23 through TTM June 2026.",
+          "strength": "clear"
+        },
+        {
+          "id": "prop-ev-02",
+          "evidenceId": "ev-02",
+          "itemId": "legal-3",
+          "proposedStatus": "done",
+          "quotedSource": "Attached is the material contracts summary for Project Beacon.",
+          "strength": "clear"
+        },
+        {
+          "id": "prop-ev-10",
+          "evidenceId": "ev-10",
+          "itemId": "legal-4",
+          "proposedStatus": "done",
+          "quotedSource": "legal is basically done on our side, will send the rest early next week",
+          "strength": "thin"
+        }
+      ],
+      "activity": [
+        {
+          "id": "act-0000",
+          "at": "2026-08-21T16:30:00Z",
+          "by": "p-partner",
+          "action": "IC approved the Criteria Worksheet. Thirty days to the IC memo and final bid."
+        },
+        {
+          "id": "act-0001",
+          "at": "2026-08-22T09:15:00Z",
+          "by": "p-vp",
+          "action": "Set up the sprint from the playbook: 37 steps across 6 lanes"
+        },
+        {
+          "id": "act-0002",
+          "at": "2026-08-22T17:40:00Z",
+          "by": "p-director",
+          "itemId": "legal-1",
+          "action": "Marked \"NDA and clean team\" done by hand: NDA countersigned"
+        },
+        {
+          "id": "act-0003",
+          "at": "2026-08-23T16:10:00Z",
+          "by": "p-associate",
+          "itemId": "qoe-1",
+          "action": "Marked \"Kickoff and scoping\" done by hand"
+        },
+        {
+          "id": "act-0004",
+          "at": "2026-08-24T19:05:00Z",
+          "by": "p-vp",
+          "itemId": "financing-1",
+          "action": "Marked \"Lender outreach list\" done by hand"
+        },
+        {
+          "id": "act-0005",
+          "at": "2026-08-25T17:30:00Z",
+          "by": "p-associate",
+          "itemId": "qoe-2",
+          "action": "Marked \"Data request list issued\" done by hand"
+        },
+        {
+          "id": "act-0006",
+          "at": "2026-08-26T16:30:00Z",
+          "by": "agent",
+          "evidenceId": "ev-04",
+          "itemId": "it-1",
+          "action": "Proposed \"Scoping call\" done (clear evidence)"
+        },
+        {
+          "id": "act-0007",
+          "at": "2026-08-26T18:20:00Z",
+          "by": "p-vp",
+          "itemId": "it-1",
+          "evidenceId": "ev-04",
+          "action": "Approved \"Scoping call\" not started to done"
+        },
+        {
+          "id": "act-0008",
+          "at": "2026-08-28T18:45:00Z",
+          "by": "p-vp",
+          "itemId": "financing-2",
+          "action": "Marked \"Lender NDAs\" done by hand"
+        },
+        {
+          "id": "act-0009",
+          "at": "2026-08-31T17:55:00Z",
+          "by": "p-director",
+          "itemId": "legal-2",
+          "action": "Marked \"Data room review\" done by hand"
+        },
+        {
+          "id": "act-0010",
+          "at": "2026-09-02T14:05:00Z",
+          "by": "agent",
+          "evidenceId": "ev-03",
+          "itemId": "hr-1",
+          "action": "Proposed \"Employee census received\" done (clear evidence)"
+        },
+        {
+          "id": "act-0011",
+          "at": "2026-09-02T15:10:00Z",
+          "by": "p-analyst",
+          "itemId": "hr-1",
+          "evidenceId": "ev-03",
+          "action": "Approved \"Employee census received\" not started to done"
+        },
+        {
+          "id": "act-0012",
+          "at": "2026-09-04T18:00:00Z",
+          "by": "p-director",
+          "itemId": "legal-3",
+          "action": "Marked \"Material contracts summary\" in progress by hand"
+        },
+        {
+          "id": "act-0013",
+          "at": "2026-09-05T18:30:00Z",
+          "by": "p-associate",
+          "itemId": "qoe-3",
+          "action": "Marked \"Databook v1 received\" in progress by hand: databook in preparation"
+        },
+        {
+          "id": "act-0014",
+          "at": "2026-09-05T18:35:00Z",
+          "by": "p-analyst",
+          "itemId": "it-2",
+          "action": "Marked \"Systems inventory\" in progress by hand"
+        },
+        {
+          "id": "act-0015",
+          "at": "2026-09-05T20:00:00Z",
+          "by": "p-associate",
+          "itemId": "memo-company",
+          "action": "Marked \"Company Overview\" in progress by hand"
+        },
+        {
+          "id": "act-0016",
+          "at": "2026-09-06T11:20:00Z",
+          "by": "agent",
+          "evidenceId": "ev-05",
+          "itemId": "financing-3",
+          "action": "Proposed \"Term sheets received\" in progress (clear evidence)"
+        },
+        {
+          "id": "act-0017",
+          "at": "2026-09-06T18:10:00Z",
+          "by": "p-vp",
+          "itemId": "financing-3",
+          "evidenceId": "ev-05",
+          "action": "Approved \"Term sheets received\" not started to in progress"
+        },
+        {
+          "id": "act-0018",
+          "at": "2026-09-06T19:00:00Z",
+          "by": "p-analyst",
+          "itemId": "memo-industry",
+          "action": "Marked \"Industry Overview\" in progress by hand"
+        },
+        {
+          "id": "act-0019",
+          "at": "2026-09-08T15:45:00Z",
+          "by": "agent",
+          "evidenceId": "ev-06",
+          "itemId": "financing-3",
+          "action": "Proposed \"Term sheets received\" done (clear evidence)"
+        },
+        {
+          "id": "act-0020",
+          "at": "2026-09-08T18:05:00Z",
+          "by": "p-vp",
+          "itemId": "financing-3",
+          "evidenceId": "ev-06",
+          "action": "Approved \"Term sheets received\" in progress to done"
+        },
+        {
+          "id": "act-0021",
+          "at": "2026-09-08T18:10:00Z",
+          "by": "p-director",
+          "itemId": "legal-4",
+          "action": "Marked \"Litigation and regulatory review\" in progress by hand"
+        },
+        {
+          "id": "act-0022",
+          "at": "2026-09-09T10:00:00Z",
+          "by": "agent",
+          "evidenceId": "ev-07",
+          "itemId": "qoe-4",
+          "action": "Proposed \"Management interviews\" in progress (thin evidence)"
+        },
+        {
+          "id": "act-0023",
+          "at": "2026-09-09T18:15:00Z",
+          "by": "p-vp",
+          "itemId": "qoe-4",
+          "evidenceId": "ev-07",
+          "action": "Approved \"Management interviews\" not started to in progress"
+        },
+        {
+          "id": "act-0024",
+          "at": "2026-09-09T18:20:00Z",
+          "by": "p-director",
+          "itemId": "legal-5",
+          "action": "Marked \"Purchase agreement first turn\" blocked by hand: waiting on the banker's draft purchase agreement"
+        },
+        {
+          "id": "act-0025",
+          "at": "2026-09-09T18:25:00Z",
+          "by": "p-analyst",
+          "itemId": "hr-2",
+          "action": "Marked \"Comp and benefits review\" blocked by hand: seller has not sent the benefits plan documents"
+        },
+        {
+          "id": "act-0026",
+          "at": "2026-09-10T18:00:00Z",
+          "by": "p-analyst",
+          "itemId": "hr-3",
+          "action": "Marked \"Key employee agreements\" in progress by hand"
+        },
+        {
+          "id": "act-0027",
+          "at": "2026-09-10T18:05:00Z",
+          "by": "p-vp",
+          "itemId": "financing-4",
+          "action": "Marked \"Lender diligence sessions\" in progress by hand"
+        },
+        {
+          "id": "act-0028",
+          "at": "2026-09-10T17:30:00Z",
+          "by": "agent",
+          "evidenceId": "ev-09",
+          "action": "Filed \"Data request list update: 14 of 28 items answered\" (no status change proposed)"
+        },
+        {
+          "id": "act-0029",
+          "at": "2026-09-10T22:10:00Z",
+          "by": "agent",
+          "evidenceId": "ev-08",
+          "action": "Filed \"Beacon working group: status, day 20\" (no status change proposed)"
+        },
+        {
+          "id": "act-0030",
+          "at": "2026-09-10T21:00:00Z",
+          "by": "p-vp",
+          "action": "Checked bid item: Offer letter"
+        },
+        {
+          "id": "act-0031",
+          "at": "2026-09-11T08:12:00Z",
+          "by": "agent",
+          "evidenceId": "ev-01",
+          "itemId": "qoe-3",
+          "action": "Proposed \"Databook v1 received\" done (clear evidence)"
+        },
+        {
+          "id": "act-0032",
+          "at": "2026-09-11T09:40:00Z",
+          "by": "agent",
+          "evidenceId": "ev-02",
+          "itemId": "legal-3",
+          "action": "Proposed \"Material contracts summary\" done (clear evidence)"
+        },
+        {
+          "id": "act-0033",
+          "at": "2026-09-11T12:55:00Z",
+          "by": "agent",
+          "evidenceId": "ev-10",
+          "itemId": "legal-4",
+          "action": "Proposed \"Litigation and regulatory review\" done (thin evidence)"
+        }
+      ],
+      "inboxEvidenceIds": [
+        "ev-01",
+        "ev-02",
+        "ev-10"
+      ],
+      "processedEvidenceIds": [
+        "ev-04",
+        "ev-03",
+        "ev-05",
+        "ev-06",
+        "ev-07",
+        "ev-09",
+        "ev-08"
+      ],
+      "sellerQuestions": [
+        {
+          "id": "sq-1",
+          "laneId": "qoe",
+          "text": "Monthly revenue by customer, FY23 to TTM",
+          "askedAt": "2026-08-26",
+          "dueAt": "2026-09-02",
+          "answered": true
+        },
+        {
+          "id": "sq-2",
+          "laneId": "qoe",
+          "text": "Add-back support for owner compensation and one-time legal fees",
+          "askedAt": "2026-08-29",
+          "dueAt": "2026-09-05",
+          "answered": false
+        },
+        {
+          "id": "sq-3",
+          "laneId": "qoe",
+          "text": "Working capital detail by month",
+          "askedAt": "2026-08-31",
+          "dueAt": "2026-09-07",
+          "answered": false
+        },
+        {
+          "id": "sq-4",
+          "laneId": "legal",
+          "text": "Customer contracts with change of control clauses",
+          "askedAt": "2026-08-27",
+          "dueAt": "2026-09-03",
+          "answered": true
+        },
+        {
+          "id": "sq-5",
+          "laneId": "legal",
+          "text": "Open litigation and any regulatory notices since 2023",
+          "askedAt": "2026-09-02",
+          "dueAt": "2026-09-09",
+          "answered": false
+        },
+        {
+          "id": "sq-6",
+          "laneId": "hr",
+          "text": "Benefits plan documents and 2026 renewal quotes",
+          "askedAt": "2026-09-04",
+          "dueAt": "2026-09-13",
+          "answered": false
+        },
+        {
+          "id": "sq-7",
+          "laneId": "it",
+          "text": "License schedule for the TMS and WMS",
+          "askedAt": "2026-09-06",
+          "dueAt": "2026-09-14",
+          "answered": false
+        },
+        {
+          "id": "sq-8",
+          "laneId": "financing",
+          "text": "Trailing twelve-month capex by facility",
+          "askedAt": "2026-09-07",
+          "dueAt": "2026-09-15",
+          "answered": false
+        }
+      ],
+      "bidChecklist": [
+        {
+          "id": "bid-1",
+          "name": "Offer letter",
+          "placeholder": true,
+          "done": true
+        },
+        {
+          "id": "bid-2",
+          "name": "Purchase agreement mark-up",
+          "placeholder": true,
+          "done": false
+        },
+        {
+          "id": "bid-3",
+          "name": "Financing commitments",
+          "placeholder": true,
+          "done": false
+        },
+        {
+          "id": "bid-4",
+          "name": "Equity commitment",
+          "placeholder": true,
+          "done": false
+        },
+        {
+          "id": "bid-5",
+          "name": "IC approval",
+          "placeholder": true,
+          "done": false
+        },
+        {
+          "id": "bid-6",
+          "name": "Open confirmatory items",
+          "placeholder": true,
+          "done": false
+        }
+      ],
+      "memoSections": [
+        {
+          "id": "memo-company",
+          "name": "Company Overview",
+          "placeholder": false,
+          "supportedBy": [
+            "qoe",
+            "legal"
+          ],
+          "coverage": "partial"
+        },
+        {
+          "id": "memo-industry",
+          "name": "Industry Overview",
+          "placeholder": false,
+          "supportedBy": [
+            "it"
+          ],
+          "coverage": "none"
+        },
+        {
+          "id": "memo-merits",
+          "name": "Merits",
+          "placeholder": false,
+          "supportedBy": [
+            "qoe",
+            "financing"
+          ],
+          "coverage": "partial"
+        },
+        {
+          "id": "memo-considerations",
+          "name": "Considerations and Diligence Focus Areas",
+          "placeholder": false,
+          "supportedBy": [
+            "legal",
+            "hr",
+            "it"
+          ],
+          "coverage": "none"
+        },
+        {
+          "id": "memo-levers",
+          "name": "Preliminary Growth and Value Creation Levers",
+          "placeholder": false,
+          "supportedBy": [
+            "it",
+            "hr"
+          ],
+          "coverage": "none"
+        },
+        {
+          "id": "memo-financial",
+          "name": "Financial Summary",
+          "placeholder": true,
+          "supportedBy": [
+            "qoe"
+          ],
+          "coverage": "none"
+        },
+        {
+          "id": "memo-valuation",
+          "name": "Valuation and Returns",
+          "placeholder": true,
+          "supportedBy": [
+            "qoe",
+            "financing"
+          ],
+          "coverage": "partial"
+        },
+        {
+          "id": "memo-financing",
+          "name": "Financing",
+          "placeholder": true,
+          "supportedBy": [
+            "financing"
+          ],
+          "coverage": "full"
+        },
+        {
+          "id": "memo-risks",
+          "name": "Key Risks",
+          "placeholder": true,
+          "supportedBy": [
+            "legal",
+            "hr"
+          ],
+          "coverage": "none"
+        },
+        {
+          "id": "memo-status",
+          "name": "Diligence Status",
+          "placeholder": true,
+          "supportedBy": [
+            "qoe",
+            "legal",
+            "hr",
+            "it",
+            "financing"
+          ],
+          "coverage": "partial"
+        }
+      ]
+    },
+    "ic-minus-3": {
+      "name": "ic-minus-3",
+      "today": "2026-09-17",
+      "day0": "2026-08-21",
+      "icDate": "2026-09-20",
+      "bidDate": "2026-09-23",
+      "items": [
+        {
+          "id": "qoe-1",
+          "laneId": "qoe",
+          "title": "Kickoff and scoping",
+          "ownerId": "p-associate",
+          "dueDate": "2026-08-23",
+          "status": "done",
+          "doneLooksLike": "Scope letter signed and kickoff held",
+          "evidenceIds": []
+        },
+        {
+          "id": "qoe-2",
+          "laneId": "qoe",
+          "title": "Data request list issued",
+          "ownerId": "p-associate",
+          "dueDate": "2026-08-25",
+          "status": "done",
+          "doneLooksLike": "Request list sent to the seller",
+          "evidenceIds": []
+        },
+        {
+          "id": "qoe-3",
+          "laneId": "qoe",
+          "title": "Databook v1 received",
+          "ownerId": "p-associate",
+          "dueDate": "2026-09-10",
+          "status": "done",
+          "doneLooksLike": "Draft databook spreadsheet in hand",
+          "evidenceIds": [
+            "ev-01"
+          ]
+        },
+        {
+          "id": "qoe-4",
+          "laneId": "qoe",
+          "title": "Management interviews",
+          "ownerId": "p-associate",
+          "dueDate": "2026-09-16",
+          "status": "done",
+          "doneLooksLike": "Interview notes filed",
+          "evidenceIds": [
+            "ev-07"
+          ]
+        },
+        {
+          "id": "qoe-5",
+          "laneId": "qoe",
+          "title": "Draft report",
+          "ownerId": "p-associate",
+          "dueDate": "2026-09-17",
+          "status": "inProgress",
+          "doneLooksLike": "Draft QoE report received",
+          "evidenceIds": []
+        },
+        {
+          "id": "qoe-6",
+          "laneId": "qoe",
+          "title": "Add-backs reconciled to model",
+          "ownerId": "p-associate",
+          "dueDate": "2026-09-19",
+          "status": "notStarted",
+          "doneLooksLike": "Add-backs tie to the model bridge",
+          "evidenceIds": []
+        },
+        {
+          "id": "qoe-7",
+          "laneId": "qoe",
+          "title": "Final report",
+          "ownerId": "p-associate",
+          "dueDate": "2026-09-20",
+          "status": "notStarted",
+          "doneLooksLike": "Final QoE report received",
+          "evidenceIds": []
+        },
+        {
+          "id": "legal-1",
+          "laneId": "legal",
+          "title": "NDA and clean team",
+          "ownerId": "p-director",
+          "dueDate": "2026-08-22",
+          "status": "done",
+          "doneLooksLike": "NDA countersigned, clean team list agreed",
+          "evidenceIds": []
+        },
+        {
+          "id": "legal-2",
+          "laneId": "legal",
+          "title": "Data room review",
+          "ownerId": "p-director",
+          "dueDate": "2026-08-31",
+          "status": "done",
+          "doneLooksLike": "Data room index reviewed and issues list started",
+          "evidenceIds": []
+        },
+        {
+          "id": "legal-3",
+          "laneId": "legal",
+          "title": "Material contracts summary",
+          "ownerId": "p-director",
+          "dueDate": "2026-09-10",
+          "status": "done",
+          "doneLooksLike": "Contracts summary memo received",
+          "evidenceIds": [
+            "ev-02"
+          ]
+        },
+        {
+          "id": "legal-4",
+          "laneId": "legal",
+          "title": "Litigation and regulatory review",
+          "ownerId": "p-director",
+          "dueDate": "2026-09-12",
+          "status": "done",
+          "doneLooksLike": "Litigation and regulatory memo received",
+          "evidenceIds": []
+        },
+        {
+          "id": "legal-5",
+          "laneId": "legal",
+          "title": "Purchase agreement first turn",
+          "ownerId": "p-director",
+          "dueDate": "2026-09-15",
+          "status": "inProgress",
+          "doneLooksLike": "Marked-up purchase agreement sent to the seller",
+          "evidenceIds": []
+        },
+        {
+          "id": "legal-6",
+          "laneId": "legal",
+          "title": "Disclosure schedules",
+          "ownerId": "p-director",
+          "dueDate": "2026-09-20",
+          "status": "notStarted",
+          "doneLooksLike": "Schedules reviewed against diligence findings",
+          "evidenceIds": []
+        },
+        {
+          "id": "hr-1",
+          "laneId": "hr",
+          "title": "Employee census received",
+          "ownerId": "p-analyst",
+          "dueDate": "2026-09-02",
+          "status": "done",
+          "doneLooksLike": "Census spreadsheet in the drop zone",
+          "evidenceIds": [
+            "ev-03"
+          ]
+        },
+        {
+          "id": "hr-2",
+          "laneId": "hr",
+          "title": "Comp and benefits review",
+          "ownerId": "p-analyst",
+          "dueDate": "2026-09-09",
+          "status": "blocked",
+          "doneLooksLike": "Benefits benchmarking memo received",
+          "evidenceIds": []
+        },
+        {
+          "id": "hr-3",
+          "laneId": "hr",
+          "title": "Key employee agreements",
+          "ownerId": "p-analyst",
+          "dueDate": "2026-09-14",
+          "status": "inProgress",
+          "doneLooksLike": "Agreements reviewed for change of control terms",
+          "evidenceIds": []
+        },
+        {
+          "id": "hr-4",
+          "laneId": "hr",
+          "title": "Retention plan draft",
+          "ownerId": "p-analyst",
+          "dueDate": "2026-09-18",
+          "status": "notStarted",
+          "doneLooksLike": "Retention plan draft shared with the partner",
+          "evidenceIds": []
+        },
+        {
+          "id": "it-1",
+          "laneId": "it",
+          "title": "Scoping call",
+          "ownerId": "p-analyst",
+          "dueDate": "2026-08-26",
+          "status": "done",
+          "doneLooksLike": "Scoping call notes filed",
+          "evidenceIds": [
+            "ev-04"
+          ]
+        },
+        {
+          "id": "it-2",
+          "laneId": "it",
+          "title": "Systems inventory",
+          "ownerId": "p-analyst",
+          "dueDate": "2026-09-05",
+          "status": "inProgress",
+          "doneLooksLike": "Inventory of systems and licenses received",
+          "evidenceIds": []
+        },
+        {
+          "id": "it-3",
+          "laneId": "it",
+          "title": "Cyber assessment",
+          "ownerId": "p-analyst",
+          "dueDate": "2026-09-13",
+          "status": "notStarted",
+          "doneLooksLike": "Cyber assessment memo received",
+          "evidenceIds": []
+        },
+        {
+          "id": "it-4",
+          "laneId": "it",
+          "title": "Integration and separation costs",
+          "ownerId": "p-analyst",
+          "dueDate": "2026-09-17",
+          "status": "notStarted",
+          "doneLooksLike": "One-time cost estimate in the model",
+          "evidenceIds": []
+        },
+        {
+          "id": "it-5",
+          "laneId": "it",
+          "title": "Report",
+          "ownerId": "p-analyst",
+          "dueDate": "2026-09-20",
+          "status": "notStarted",
+          "doneLooksLike": "Final IT report received",
+          "evidenceIds": []
+        },
+        {
+          "id": "financing-1",
+          "laneId": "financing",
+          "title": "Lender outreach list",
+          "ownerId": "p-vp",
+          "dueDate": "2026-08-24",
+          "status": "done",
+          "doneLooksLike": "Outreach list agreed with the partner",
+          "evidenceIds": []
+        },
+        {
+          "id": "financing-2",
+          "laneId": "financing",
+          "title": "Lender NDAs",
+          "ownerId": "p-vp",
+          "dueDate": "2026-08-28",
+          "status": "done",
+          "doneLooksLike": "NDAs signed with every lender in process",
+          "evidenceIds": []
+        },
+        {
+          "id": "financing-3",
+          "laneId": "financing",
+          "title": "Term sheets received",
+          "ownerId": "p-vp",
+          "dueDate": "2026-09-08",
+          "status": "done",
+          "doneLooksLike": "Term sheets from at least two lenders",
+          "evidenceIds": [
+            "ev-05",
+            "ev-06"
+          ]
+        },
+        {
+          "id": "financing-4",
+          "laneId": "financing",
+          "title": "Lender diligence sessions",
+          "ownerId": "p-vp",
+          "dueDate": "2026-09-14",
+          "status": "done",
+          "doneLooksLike": "Lender sessions with management held",
+          "evidenceIds": []
+        },
+        {
+          "id": "financing-5",
+          "laneId": "financing",
+          "title": "Commitment letters",
+          "ownerId": "p-vp",
+          "dueDate": "2026-09-21",
+          "status": "notStarted",
+          "doneLooksLike": "Signed commitment letters received",
+          "evidenceIds": []
+        },
+        {
+          "id": "memo-company",
+          "laneId": "memo",
+          "title": "Company Overview",
+          "ownerId": "p-associate",
+          "dueDate": "2026-09-19",
+          "status": "done",
+          "doneLooksLike": "Section drafted and reviewed by the partner",
+          "evidenceIds": []
+        },
+        {
+          "id": "memo-industry",
+          "laneId": "memo",
+          "title": "Industry Overview",
+          "ownerId": "p-analyst",
+          "dueDate": "2026-09-19",
+          "status": "inProgress",
+          "doneLooksLike": "Section drafted and reviewed by the partner",
+          "evidenceIds": []
+        },
+        {
+          "id": "memo-merits",
+          "laneId": "memo",
+          "title": "Merits",
+          "ownerId": "p-vp",
+          "dueDate": "2026-09-19",
+          "status": "inProgress",
+          "doneLooksLike": "Section drafted and reviewed by the partner",
+          "evidenceIds": []
+        },
+        {
+          "id": "memo-considerations",
+          "laneId": "memo",
+          "title": "Considerations and Diligence Focus Areas",
+          "ownerId": "p-vp",
+          "dueDate": "2026-09-19",
+          "status": "inProgress",
+          "doneLooksLike": "Section drafted and reviewed by the partner",
+          "evidenceIds": []
+        },
+        {
+          "id": "memo-levers",
+          "laneId": "memo",
+          "title": "Preliminary Growth and Value Creation Levers",
+          "ownerId": "p-director",
+          "dueDate": "2026-09-19",
+          "status": "notStarted",
+          "doneLooksLike": "Section drafted and reviewed by the partner",
+          "evidenceIds": []
+        },
+        {
+          "id": "memo-financial",
+          "laneId": "memo",
+          "title": "Financial Summary (placeholder)",
+          "ownerId": "p-associate",
+          "dueDate": "2026-09-19",
+          "status": "notStarted",
+          "doneLooksLike": "Section confirmed with the sponsor, then drafted",
+          "evidenceIds": []
+        },
+        {
+          "id": "memo-valuation",
+          "laneId": "memo",
+          "title": "Valuation and Returns (placeholder)",
+          "ownerId": "p-associate",
+          "dueDate": "2026-09-19",
+          "status": "notStarted",
+          "doneLooksLike": "Section confirmed with the sponsor, then drafted",
+          "evidenceIds": []
+        },
+        {
+          "id": "memo-financing",
+          "laneId": "memo",
+          "title": "Financing (placeholder)",
+          "ownerId": "p-vp",
+          "dueDate": "2026-09-19",
+          "status": "notStarted",
+          "doneLooksLike": "Section confirmed with the sponsor, then drafted",
+          "evidenceIds": []
+        },
+        {
+          "id": "memo-risks",
+          "laneId": "memo",
+          "title": "Key Risks (placeholder)",
+          "ownerId": "p-vp",
+          "dueDate": "2026-09-19",
+          "status": "notStarted",
+          "doneLooksLike": "Section confirmed with the sponsor, then drafted",
+          "evidenceIds": []
+        },
+        {
+          "id": "memo-status",
+          "laneId": "memo",
+          "title": "Diligence Status (placeholder)",
+          "ownerId": "p-vp",
+          "dueDate": "2026-09-19",
+          "status": "notStarted",
+          "doneLooksLike": "Section confirmed with the sponsor, then drafted",
+          "evidenceIds": []
+        }
+      ],
+      "proposals": [
+        {
+          "id": "prop-ev-04",
+          "evidenceId": "ev-04",
+          "itemId": "it-1",
+          "proposedStatus": "done",
+          "quotedSource": "Scoping call held with Beacon's head of operations technology.",
+          "strength": "clear",
+          "decision": {
+            "by": "p-vp",
+            "at": "2026-08-26T18:20:00Z",
+            "action": "approved"
+          }
+        },
+        {
+          "id": "prop-ev-03",
+          "evidenceId": "ev-03",
+          "itemId": "hr-1",
+          "proposedStatus": "done",
+          "quotedSource": "Employee census for Beacon as of August 2026.",
+          "strength": "clear",
+          "decision": {
+            "by": "p-analyst",
+            "at": "2026-09-02T15:10:00Z",
+            "action": "approved"
+          }
+        },
+        {
+          "id": "prop-ev-05",
+          "evidenceId": "ev-05",
+          "itemId": "financing-3",
+          "proposedStatus": "inProgress",
+          "quotedSource": "Attached is our term sheet for Project Beacon: unitranche, 4.5x leverage, pricing as discussed.",
+          "strength": "clear",
+          "decision": {
+            "by": "p-vp",
+            "at": "2026-09-06T18:10:00Z",
+            "action": "approved"
+          }
+        },
+        {
+          "id": "prop-ev-06",
+          "evidenceId": "ev-06",
+          "itemId": "financing-3",
+          "proposedStatus": "done",
+          "quotedSource": "Please see attached the Larkspur term sheet for Project Beacon.",
+          "strength": "clear",
+          "decision": {
+            "by": "p-vp",
+            "at": "2026-09-08T18:05:00Z",
+            "action": "approved"
+          }
+        },
+        {
+          "id": "prop-ev-07",
+          "evidenceId": "ev-07",
+          "itemId": "qoe-4",
+          "proposedStatus": "inProgress",
+          "quotedSource": "Management meeting with the Beacon founder and CFO scheduled for 2026-09-16 at Beacon's main cross-dock site.",
+          "strength": "thin",
+          "decision": {
+            "by": "p-vp",
+            "at": "2026-09-09T18:15:00Z",
+            "action": "approved"
+          }
+        },
+        {
+          "id": "prop-ev-01",
+          "evidenceId": "ev-01",
+          "itemId": "qoe-3",
+          "proposedStatus": "done",
+          "quotedSource": "Please find attached draft databook v1 for Project Beacon covering FY23 through TTM June 2026.",
+          "strength": "clear",
+          "decision": {
+            "by": "p-vp",
+            "at": "2026-09-11T18:02:00Z",
+            "action": "approved"
+          }
+        },
+        {
+          "id": "prop-ev-02",
+          "evidenceId": "ev-02",
+          "itemId": "legal-3",
+          "proposedStatus": "done",
+          "quotedSource": "Attached is the material contracts summary for Project Beacon.",
+          "strength": "clear",
+          "decision": {
+            "by": "p-vp",
+            "at": "2026-09-11T18:03:00Z",
+            "action": "approved"
+          }
+        },
+        {
+          "id": "prop-ev-10",
+          "evidenceId": "ev-10",
+          "itemId": "legal-4",
+          "proposedStatus": "done",
+          "quotedSource": "legal is basically done on our side, will send the rest early next week",
+          "strength": "thin",
+          "decision": {
+            "by": "p-vp",
+            "at": "2026-09-11T18:04:00Z",
+            "action": "askedForConfirmation",
+            "reason": "one line, no attachment, asked Sam which steps are done"
+          }
+        },
+        {
+          "id": "prop-ev-11",
+          "evidenceId": "ev-11",
+          "itemId": "financing-5",
+          "proposedStatus": "done",
+          "quotedSource": "Quick update: commitment letter sent this morning to your deal counsel for review.",
+          "strength": "conflict",
+          "conflictNote": "Tracker says \"Commitment letters\" has not started and \"Lender diligence sessions\" is in progress.",
+          "decision": {
+            "by": "p-vp",
+            "at": "2026-09-12T18:10:00Z",
+            "action": "rejected",
+            "reason": "Tom confirmed by phone: letter is drafted, not sent. Still at term sheet stage."
+          }
+        }
+      ],
+      "activity": [
+        {
+          "id": "act-0000",
+          "at": "2026-08-21T16:30:00Z",
+          "by": "p-partner",
+          "action": "IC approved the Criteria Worksheet. Thirty days to the IC memo and final bid."
+        },
+        {
+          "id": "act-0001",
+          "at": "2026-08-22T09:15:00Z",
+          "by": "p-vp",
+          "action": "Set up the sprint from the playbook: 37 steps across 6 lanes"
+        },
+        {
+          "id": "act-0002",
+          "at": "2026-08-22T17:40:00Z",
+          "by": "p-director",
+          "itemId": "legal-1",
+          "action": "Marked \"NDA and clean team\" done by hand: NDA countersigned"
+        },
+        {
+          "id": "act-0003",
+          "at": "2026-08-23T16:10:00Z",
+          "by": "p-associate",
+          "itemId": "qoe-1",
+          "action": "Marked \"Kickoff and scoping\" done by hand"
+        },
+        {
+          "id": "act-0004",
+          "at": "2026-08-24T19:05:00Z",
+          "by": "p-vp",
+          "itemId": "financing-1",
+          "action": "Marked \"Lender outreach list\" done by hand"
+        },
+        {
+          "id": "act-0005",
+          "at": "2026-08-25T17:30:00Z",
+          "by": "p-associate",
+          "itemId": "qoe-2",
+          "action": "Marked \"Data request list issued\" done by hand"
+        },
+        {
+          "id": "act-0006",
+          "at": "2026-08-26T16:30:00Z",
+          "by": "agent",
+          "evidenceId": "ev-04",
+          "itemId": "it-1",
+          "action": "Proposed \"Scoping call\" done (clear evidence)"
+        },
+        {
+          "id": "act-0007",
+          "at": "2026-08-26T18:20:00Z",
+          "by": "p-vp",
+          "itemId": "it-1",
+          "evidenceId": "ev-04",
+          "action": "Approved \"Scoping call\" not started to done"
+        },
+        {
+          "id": "act-0008",
+          "at": "2026-08-28T18:45:00Z",
+          "by": "p-vp",
+          "itemId": "financing-2",
+          "action": "Marked \"Lender NDAs\" done by hand"
+        },
+        {
+          "id": "act-0009",
+          "at": "2026-08-31T17:55:00Z",
+          "by": "p-director",
+          "itemId": "legal-2",
+          "action": "Marked \"Data room review\" done by hand"
+        },
+        {
+          "id": "act-0010",
+          "at": "2026-09-02T14:05:00Z",
+          "by": "agent",
+          "evidenceId": "ev-03",
+          "itemId": "hr-1",
+          "action": "Proposed \"Employee census received\" done (clear evidence)"
+        },
+        {
+          "id": "act-0011",
+          "at": "2026-09-02T15:10:00Z",
+          "by": "p-analyst",
+          "itemId": "hr-1",
+          "evidenceId": "ev-03",
+          "action": "Approved \"Employee census received\" not started to done"
+        },
+        {
+          "id": "act-0012",
+          "at": "2026-09-04T18:00:00Z",
+          "by": "p-director",
+          "itemId": "legal-3",
+          "action": "Marked \"Material contracts summary\" in progress by hand"
+        },
+        {
+          "id": "act-0013",
+          "at": "2026-09-05T18:30:00Z",
+          "by": "p-associate",
+          "itemId": "qoe-3",
+          "action": "Marked \"Databook v1 received\" in progress by hand: databook in preparation"
+        },
+        {
+          "id": "act-0014",
+          "at": "2026-09-05T18:35:00Z",
+          "by": "p-analyst",
+          "itemId": "it-2",
+          "action": "Marked \"Systems inventory\" in progress by hand"
+        },
+        {
+          "id": "act-0015",
+          "at": "2026-09-05T20:00:00Z",
+          "by": "p-associate",
+          "itemId": "memo-company",
+          "action": "Marked \"Company Overview\" in progress by hand"
+        },
+        {
+          "id": "act-0016",
+          "at": "2026-09-06T11:20:00Z",
+          "by": "agent",
+          "evidenceId": "ev-05",
+          "itemId": "financing-3",
+          "action": "Proposed \"Term sheets received\" in progress (clear evidence)"
+        },
+        {
+          "id": "act-0017",
+          "at": "2026-09-06T18:10:00Z",
+          "by": "p-vp",
+          "itemId": "financing-3",
+          "evidenceId": "ev-05",
+          "action": "Approved \"Term sheets received\" not started to in progress"
+        },
+        {
+          "id": "act-0018",
+          "at": "2026-09-06T19:00:00Z",
+          "by": "p-analyst",
+          "itemId": "memo-industry",
+          "action": "Marked \"Industry Overview\" in progress by hand"
+        },
+        {
+          "id": "act-0019",
+          "at": "2026-09-08T15:45:00Z",
+          "by": "agent",
+          "evidenceId": "ev-06",
+          "itemId": "financing-3",
+          "action": "Proposed \"Term sheets received\" done (clear evidence)"
+        },
+        {
+          "id": "act-0020",
+          "at": "2026-09-08T18:05:00Z",
+          "by": "p-vp",
+          "itemId": "financing-3",
+          "evidenceId": "ev-06",
+          "action": "Approved \"Term sheets received\" in progress to done"
+        },
+        {
+          "id": "act-0021",
+          "at": "2026-09-08T18:10:00Z",
+          "by": "p-director",
+          "itemId": "legal-4",
+          "action": "Marked \"Litigation and regulatory review\" in progress by hand"
+        },
+        {
+          "id": "act-0022",
+          "at": "2026-09-09T10:00:00Z",
+          "by": "agent",
+          "evidenceId": "ev-07",
+          "itemId": "qoe-4",
+          "action": "Proposed \"Management interviews\" in progress (thin evidence)"
+        },
+        {
+          "id": "act-0023",
+          "at": "2026-09-09T18:15:00Z",
+          "by": "p-vp",
+          "itemId": "qoe-4",
+          "evidenceId": "ev-07",
+          "action": "Approved \"Management interviews\" not started to in progress"
+        },
+        {
+          "id": "act-0024",
+          "at": "2026-09-09T18:20:00Z",
+          "by": "p-director",
+          "itemId": "legal-5",
+          "action": "Marked \"Purchase agreement first turn\" blocked by hand: waiting on the banker's draft purchase agreement"
+        },
+        {
+          "id": "act-0025",
+          "at": "2026-09-09T18:25:00Z",
+          "by": "p-analyst",
+          "itemId": "hr-2",
+          "action": "Marked \"Comp and benefits review\" blocked by hand: seller has not sent the benefits plan documents"
+        },
+        {
+          "id": "act-0026",
+          "at": "2026-09-10T18:00:00Z",
+          "by": "p-analyst",
+          "itemId": "hr-3",
+          "action": "Marked \"Key employee agreements\" in progress by hand"
+        },
+        {
+          "id": "act-0027",
+          "at": "2026-09-10T18:05:00Z",
+          "by": "p-vp",
+          "itemId": "financing-4",
+          "action": "Marked \"Lender diligence sessions\" in progress by hand"
+        },
+        {
+          "id": "act-0028",
+          "at": "2026-09-10T17:30:00Z",
+          "by": "agent",
+          "evidenceId": "ev-09",
+          "action": "Filed \"Data request list update: 14 of 28 items answered\" (no status change proposed)"
+        },
+        {
+          "id": "act-0029",
+          "at": "2026-09-10T22:10:00Z",
+          "by": "agent",
+          "evidenceId": "ev-08",
+          "action": "Filed \"Beacon working group: status, day 20\" (no status change proposed)"
+        },
+        {
+          "id": "act-0030",
+          "at": "2026-09-10T21:00:00Z",
+          "by": "p-vp",
+          "action": "Checked bid item: Offer letter"
+        },
+        {
+          "id": "act-0031",
+          "at": "2026-09-11T08:12:00Z",
+          "by": "agent",
+          "evidenceId": "ev-01",
+          "itemId": "qoe-3",
+          "action": "Proposed \"Databook v1 received\" done (clear evidence)"
+        },
+        {
+          "id": "act-0032",
+          "at": "2026-09-11T09:40:00Z",
+          "by": "agent",
+          "evidenceId": "ev-02",
+          "itemId": "legal-3",
+          "action": "Proposed \"Material contracts summary\" done (clear evidence)"
+        },
+        {
+          "id": "act-0033",
+          "at": "2026-09-11T12:55:00Z",
+          "by": "agent",
+          "evidenceId": "ev-10",
+          "itemId": "legal-4",
+          "action": "Proposed \"Litigation and regulatory review\" done (thin evidence)"
+        },
+        {
+          "id": "act-0001",
+          "at": "2026-09-11T18:02:00Z",
+          "by": "p-vp",
+          "itemId": "qoe-3",
+          "evidenceId": "ev-01",
+          "action": "Approved \"Databook v1 received\" in progress to done"
+        },
+        {
+          "id": "act-0002",
+          "at": "2026-09-11T18:03:00Z",
+          "by": "p-vp",
+          "itemId": "legal-3",
+          "evidenceId": "ev-02",
+          "action": "Approved \"Material contracts summary\" in progress to done"
+        },
+        {
+          "id": "act-0003",
+          "at": "2026-09-11T18:04:00Z",
+          "by": "p-vp",
+          "itemId": "legal-4",
+          "evidenceId": "ev-10",
+          "action": "Asked for confirmation on \"Litigation and regulatory review\": one line, no attachment, asked Sam which steps are done"
+        },
+        {
+          "id": "act-0004",
+          "at": "2026-09-12T09:05:00Z",
+          "by": "agent",
+          "evidenceId": "ev-11",
+          "itemId": "financing-5",
+          "action": "Proposed \"Commitment letters\" done (conflict evidence)"
+        },
+        {
+          "id": "act-0005",
+          "at": "2026-09-12T18:10:00Z",
+          "by": "p-vp",
+          "itemId": "financing-5",
+          "evidenceId": "ev-11",
+          "action": "Rejected \"Commitment letters\" to done: Tom confirmed by phone: letter is drafted, not sent. Still at term sheet stage."
+        },
+        {
+          "id": "act-0006",
+          "at": "2026-09-13T17:50:00Z",
+          "by": "p-director",
+          "itemId": "legal-4",
+          "action": "Marked \"Litigation and regulatory review\" done by hand: litigation memo received"
+        },
+        {
+          "id": "act-0007",
+          "at": "2026-09-14T19:00:00Z",
+          "by": "p-vp",
+          "itemId": "financing-4",
+          "action": "Marked \"Lender diligence sessions\" done by hand: both lender sessions held"
+        },
+        {
+          "id": "act-0008",
+          "at": "2026-09-15T18:00:00Z",
+          "by": "p-director",
+          "itemId": "legal-5",
+          "action": "Marked \"Purchase agreement first turn\" in progress by hand: banker's draft arrived"
+        },
+        {
+          "id": "act-0009",
+          "at": "2026-09-16T19:30:00Z",
+          "by": "p-associate",
+          "itemId": "qoe-4",
+          "action": "Marked \"Management interviews\" done by hand"
+        },
+        {
+          "id": "act-0010",
+          "at": "2026-09-17T17:45:00Z",
+          "by": "p-associate",
+          "itemId": "qoe-5",
+          "action": "Marked \"Draft report\" in progress by hand"
+        },
+        {
+          "id": "act-0011",
+          "at": "2026-09-16T21:00:00Z",
+          "by": "p-associate",
+          "itemId": "memo-company",
+          "action": "Marked \"Company Overview\" done by hand"
+        },
+        {
+          "id": "act-0012",
+          "at": "2026-09-16T21:10:00Z",
+          "by": "p-vp",
+          "itemId": "memo-merits",
+          "action": "Marked \"Merits\" in progress by hand"
+        },
+        {
+          "id": "act-0013",
+          "at": "2026-09-17T17:00:00Z",
+          "by": "p-vp",
+          "itemId": "memo-considerations",
+          "action": "Marked \"Considerations and Diligence Focus Areas\" in progress by hand"
+        },
+        {
+          "id": "act-0014",
+          "at": "2026-09-15T18:30:00Z",
+          "by": "p-director",
+          "action": "Checked bid item: Purchase agreement mark-up"
+        },
+        {
+          "id": "act-0015",
+          "at": "2026-09-17T16:00:00Z",
+          "by": "p-partner",
+          "action": "Checked bid item: Equity commitment"
+        }
+      ],
+      "inboxEvidenceIds": [
+        "ev-10"
+      ],
+      "processedEvidenceIds": [
+        "ev-04",
+        "ev-03",
+        "ev-05",
+        "ev-06",
+        "ev-07",
+        "ev-09",
+        "ev-08",
+        "ev-01",
+        "ev-02",
+        "ev-11"
+      ],
+      "sellerQuestions": [
+        {
+          "id": "sq-1",
+          "laneId": "qoe",
+          "text": "Monthly revenue by customer, FY23 to TTM",
+          "askedAt": "2026-08-26",
+          "dueAt": "2026-09-02",
+          "answered": true
+        },
+        {
+          "id": "sq-2",
+          "laneId": "qoe",
+          "text": "Add-back support for owner compensation and one-time legal fees",
+          "askedAt": "2026-08-29",
+          "dueAt": "2026-09-05",
+          "answered": false
+        },
+        {
+          "id": "sq-3",
+          "laneId": "qoe",
+          "text": "Working capital detail by month",
+          "askedAt": "2026-08-31",
+          "dueAt": "2026-09-07",
+          "answered": false
+        },
+        {
+          "id": "sq-4",
+          "laneId": "legal",
+          "text": "Customer contracts with change of control clauses",
+          "askedAt": "2026-08-27",
+          "dueAt": "2026-09-03",
+          "answered": true
+        },
+        {
+          "id": "sq-5",
+          "laneId": "legal",
+          "text": "Open litigation and any regulatory notices since 2023",
+          "askedAt": "2026-09-02",
+          "dueAt": "2026-09-09",
+          "answered": false
+        },
+        {
+          "id": "sq-6",
+          "laneId": "hr",
+          "text": "Benefits plan documents and 2026 renewal quotes",
+          "askedAt": "2026-09-04",
+          "dueAt": "2026-09-13",
+          "answered": false
+        },
+        {
+          "id": "sq-7",
+          "laneId": "it",
+          "text": "License schedule for the TMS and WMS",
+          "askedAt": "2026-09-06",
+          "dueAt": "2026-09-14",
+          "answered": false
+        },
+        {
+          "id": "sq-8",
+          "laneId": "financing",
+          "text": "Trailing twelve-month capex by facility",
+          "askedAt": "2026-09-07",
+          "dueAt": "2026-09-15",
+          "answered": false
+        }
+      ],
+      "bidChecklist": [
+        {
+          "id": "bid-1",
+          "name": "Offer letter",
+          "placeholder": true,
+          "done": true
+        },
+        {
+          "id": "bid-2",
+          "name": "Purchase agreement mark-up",
+          "placeholder": true,
+          "done": true
+        },
+        {
+          "id": "bid-3",
+          "name": "Financing commitments",
+          "placeholder": true,
+          "done": false
+        },
+        {
+          "id": "bid-4",
+          "name": "Equity commitment",
+          "placeholder": true,
+          "done": true
+        },
+        {
+          "id": "bid-5",
+          "name": "IC approval",
+          "placeholder": true,
+          "done": false
+        },
+        {
+          "id": "bid-6",
+          "name": "Open confirmatory items",
+          "placeholder": true,
+          "done": false
+        }
+      ],
+      "memoSections": [
+        {
+          "id": "memo-company",
+          "name": "Company Overview",
+          "placeholder": false,
+          "supportedBy": [
+            "qoe",
+            "legal"
+          ],
+          "coverage": "full"
+        },
+        {
+          "id": "memo-industry",
+          "name": "Industry Overview",
+          "placeholder": false,
+          "supportedBy": [
+            "it"
+          ],
+          "coverage": "none"
+        },
+        {
+          "id": "memo-merits",
+          "name": "Merits",
+          "placeholder": false,
+          "supportedBy": [
+            "qoe",
+            "financing"
+          ],
+          "coverage": "full"
+        },
+        {
+          "id": "memo-considerations",
+          "name": "Considerations and Diligence Focus Areas",
+          "placeholder": false,
+          "supportedBy": [
+            "legal",
+            "hr",
+            "it"
+          ],
+          "coverage": "partial"
+        },
+        {
+          "id": "memo-levers",
+          "name": "Preliminary Growth and Value Creation Levers",
+          "placeholder": false,
+          "supportedBy": [
+            "it",
+            "hr"
+          ],
+          "coverage": "none"
+        },
+        {
+          "id": "memo-financial",
+          "name": "Financial Summary",
+          "placeholder": true,
+          "supportedBy": [
+            "qoe"
+          ],
+          "coverage": "partial"
+        },
+        {
+          "id": "memo-valuation",
+          "name": "Valuation and Returns",
+          "placeholder": true,
+          "supportedBy": [
+            "qoe",
+            "financing"
+          ],
+          "coverage": "full"
+        },
+        {
+          "id": "memo-financing",
+          "name": "Financing",
+          "placeholder": true,
+          "supportedBy": [
+            "financing"
+          ],
+          "coverage": "full"
+        },
+        {
+          "id": "memo-risks",
+          "name": "Key Risks",
+          "placeholder": true,
+          "supportedBy": [
+            "legal",
+            "hr"
+          ],
+          "coverage": "partial"
+        },
+        {
+          "id": "memo-status",
+          "name": "Diligence Status",
+          "placeholder": true,
+          "supportedBy": [
+            "qoe",
+            "legal",
+            "hr",
+            "it",
+            "financing"
+          ],
+          "coverage": "partial"
+        }
+      ]
+    }
+  }
+}

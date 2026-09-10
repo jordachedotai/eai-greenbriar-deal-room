@@ -7,7 +7,7 @@
 | Match evidence to an item | Code first (party, keywords, attachment name), Claude only for ambiguous cases in live mode | Mock mode ships the matches in the fixtures |
 | Quote the source line | Code (extract the sentence containing the matched phrase) | Never paraphrase the evidence |
 | Strength: clear, thin, conflict | Code rules: attachment present and sender is the lane's party = clear; one line, no attachment = thin; claim contradicts current status = conflict | Deterministic so the demo is repeatable |
-| Draft the status note | Claude in live mode, template in mock mode (`lib/mockAgent.ts`) | Structure from AJ's sample once it arrives; placeholder structure until then |
+| Draft the status note | Claude in live mode, template in mock mode (`lib/agent.ts` dispatches, `lib/mockAgent.ts` holds the templates) | Structure from AJ's sample once it arrives; placeholder structure until then |
 | Readiness coverage | Code (memo section supportedBy lanes and item statuses) | No model call |
 | Set up the sprint (kickoff) | Template from `workstreams.json` | The "playbook" story |
 

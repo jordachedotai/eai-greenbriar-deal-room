@@ -1,0 +1,37 @@
+"use client";
+import { useEffect } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import { useStore } from "@/lib/store";
+import type { Evidence, EvidenceMatch } from "@/lib/types";
+import { Header } from "./Header";
+import { LoopRail } from "./LoopRail";
+
+export function Shell({ evidence, matches, children }: { evidence: Evidence[]; matches: EvidenceMatch[]; children: React.ReactNode }) {
+  const router = useRouter();
+  const pathname = usePathname();
+  const hydrated = useStore((s) => s.hasHydrated);
+  const user = useStore((s) => s.currentUserId);
+  const setSources = useStore((s) => s.setSources);
+
+  useEffect(() => {
+    setSources(evidence, matches);
+  }, [evidence, matches, setSources]);
+
+  useEffect(() => {
+    if (hydrated && !user) router.replace(`/login?next=${encodeURIComponent(pathname)}`);
+  }, [hydrated, user, router, pathname]);
+
+  if (!hydrated || !user) {
+    return <div className="flex h-screen items-center justify-center text-muted">Opening the room</div>;
+  }
+
+  return (
+    <div className="flex h-screen overflow-hidden">
+      <LoopRail />
+      <div className="flex min-w-0 flex-1 flex-col">
+        <Header />
+        <main className="min-h-0 flex-1 overflow-auto">{children}</main>
+      </div>
+    </div>
+  );
+}
